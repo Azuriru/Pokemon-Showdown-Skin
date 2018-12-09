@@ -1,1 +1,47 @@
+.dark .header {
+    background: rgba(15, 27, 48, 0.3);
+}
 
+.dark .ps-room.ps-room-light, .dark .tournament-box, .dark .tournament-status, .dark .tournament-toggle, .dark .pm-log-add {
+    background: rgba(12, 0, 41, 0.5);
+    color: #f3f3f3;
+    transition: .5s;
+}
+
+.dark .roomlist a.ilink {
+    border-color: #9a81d5;
+    background: rgba(27, 6, 78, 0.4);
+    color: #c7b0ff;
+    transition: .5s;
+}
+
+.dark .roomlist a.ilink:hover {
+    border-color: #c6aeff;
+    background: rgba(27, 6, 78, 0.3);
+    color: #dbcbff;
+}
+
+.dark .button, .dark .tabbar a.button, .dark .popupmenu button.button {
+    background: rgba(27, 6, 78, 0.5);
+    border-color: #987fdb;
+    transition: .5s; 
+}
+
+.dark .tabbar a.button.subtle-notifying {
+    color: #c6aeff;
+}
+
+.dark .maintabbarbottom {
+    background: rgba(27, 6, 78, 0.6);
+    border-color: #c6aeff;
+}
+
+.dark .button.cur, .dark .button.cur:hover, .dark .tabbar a.button.cur, .dark .tabbar a.button.cur:hover {
+    background: rgba(27, 6, 78, 0.6);
+    border-color: #c6aeff;
+}
+
+.dark .userbar .username {
+    color: #ddd;
+    text-shadow: 1px 1px 0 #f8f8f8, 1px -1px 0 #f8f8f8, -1px 1px 0 #f8f8f8, 
+}
