@@ -102,11 +102,11 @@
 }
 
 /* Tables */
-.ladder table, .ladder td, .ladder th {
+.dark .ladder table, .dark .ladder td, .dark .ladder th {
     border: 1px solid #c5acff;
 }
 
-.ladder th {
+.dark .ladder th {
     background: #d8c7ff;
     color: #000;
 }
