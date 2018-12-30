@@ -2,10 +2,42 @@
     background: rgba(15, 27, 48, 0.3);
 }
 
+.dark .mainmenuwrapper {
+    background: rgba(12, 0, 41, 0.4);
+}
+
 .dark .ps-room.ps-room-light, .dark .tournament-box, .dark .tournament-status, .dark .tournament-toggle, .dark .pm-log-add {
     background: rgba(12, 0, 41, 0.5);
     color: #f3f3f3;
+}
+
+.dark .ps-room {
+    border-left: 1px solid #c5acff;
+}
+
+.dark .userlist {
+    border-right: 1px solid #c4aaff
+}
+
+.dark .userlist li button {
     transition: .5s;
+}
+
+.dark .userlist li button:hover {
+    background: rgba(12, 0, 41, 0.3);
+}
+
+.dark .chat-log {
+    background: rgba(12, 0, 41, 0.2);
+    color: #ddd;
+}
+
+.dark .chat small {
+    color: #ccc;
+}
+
+.dark .message small {
+    color: #bdbdbd !important;
 }
 
 .dark .roomlist a.ilink {
@@ -21,13 +53,19 @@
     color: #dbcbff;
 }
 
-.dark .button, .dark .tabbar a.button, .dark .popupmenu button.button {
+.dark .button, .dark .tabbar a.button, .dark .popupmenu button.button, .dark button {
     background: rgba(27, 6, 78, 0.5);
     border-color: #987fdb;
     transition: .5s; 
+    color: #c4aaff;
 }
 
-.dark .tabbar a.button.subtle-notifying {
+.dark .button:hover, .dark .tabbar a.button:hover, .dark button:hover {
+    background: rgba(27, 6, 78, 0.9);
+    border-color: #b698fb;
+}
+
+.dark .tabbar a.button.subtle-notifying, .dark button {
     color: #c6aeff;
 }
 
@@ -41,7 +79,50 @@
     border-color: #c6aeff;
 }
 
+.dark button {
+    border-radius: 5px;
+}
+
 .dark .userbar .username {
     color: #ddd;
     text-shadow: 1px 1px 0 #f8f8f8, 1px -1px 0 #f8f8f8, -1px 1px 0 #f8f8f8, 
+}
+
+.dark .select, .dark .team {
+    border-color: #c6aeff;
+    background: rgba(27, 6, 78, 0.6);
+    color: #fff;
+}
+
+.dark .ps-popup {
+    background: rgba(12, 0, 41, 0.75);
+    color: #ddd;
+    border-color: #9a81d5;
+    box-shadow: 2px 2px 3px rgba(12, 0, 41, 0.2);
+}
+
+/* Tables */
+.ladder table, .ladder td, .ladder th {
+    border: 1px solid #c5acff;
+}
+
+.ladder th {
+    background: #d8c7ff;
+    color: #000;
+}
+
+/* Scrollbar */
+.dark ::-webkit-scrollbar {
+    width: 8px
+}
+
+.dark ::-webkit-scrollbar-thumb {
+    border: 3px solid transparent;
+    background-color: rgba(27, 6, 78, 0.6);
+    border-radius: 5px
+}
+
+.dark ::-webkit-scrollbar-track-piece {
+    background-color: rgba(27, 6, 78, 0.4);
+    background-clip: padding-box;
 }
