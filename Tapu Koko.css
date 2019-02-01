@@ -7,6 +7,10 @@
     background: rgba(12, 0, 41, 0.4);
 }
 
+.dark .menugroup {
+    background: rgba(58, 35, 109, 0.3);
+}
+
 .dark .ps-room.ps-room-light,
 .dark .tournament-box,
 .dark .tournament-status,
@@ -53,8 +57,45 @@
     color: #ddd;
 }
 
+.dark .textbox:focus {
+    background: rgba(12, 0, 41, 0.2);
+}
+
+.dark .textbox:focus {
+    border-color: #45386f;
+    box-shadow: 0 0 4px #c3a7ff, 0 0 4px #c3a7ff;
+}
+
 .dark ::-webkit-input-placeholder {
     color: #ddd;
+}
+
+/* Chat */
+.dark .pm-window h3 {
+    border: 1px solid  #c6aeff;
+    background: rgb(27, 6, 78);
+    color: #ddd;
+}
+
+.dark .pm-log,
+.dark .pm-log-add {
+    border-color: #c6aeff;
+}
+
+.dark .pm-log {
+    background: rgba(12, 0, 41, 0.7);
+    color: #ddd;
+}
+
+.dark .chat.mine {
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.dark .minimizebutton:hover, 
+.dark .pm-window h3:hover .minimizebutton,
+.dark .closebutton:hover,
+.dark .pm-window h3 .closebutton:hover + .minimizebutton {
+    color: #947ae9;
 }
 
 /* Buttons */
@@ -71,6 +112,16 @@
     color: #dbcbff;
 }
 
+.dark .tabbar a.button.notifying {
+    background: #c5acff;
+    border-color: #947ae9;
+    color: #534c6a;
+}
+
+.dark .tabbar a.button.notifying:hover {
+    background: #e0d2ff;
+}
+
 .dark .tabbar .button,
 .dark .tabbar a.button,
 .dark .roomlist .button,
@@ -79,7 +130,7 @@
 .dark .pad button,
 .dark .ps-popup button,
 .dark .teampane button:not([name=edit]):not([name=newTop]):not([name=delete]),
-.dark .teampane > p:nth-of-type(3) button {
+.dark .teampane p button {
     background: rgba(27, 6, 78, 0.5);
     border-color: #987fdb;
     transition: .5s; 
@@ -94,11 +145,15 @@
 .dark .pad button:hover,
 .dark .ps-popup button:hover,
 .dark .teampane button:not([name=edit]):not([name=newTop]):not([name=delete]):hover,
-.dark .teampane > p:nth-of-type(3) button:hover {
+.dark .teampane p button:hover {
     background: rgba(27, 6, 78, 0.9);
     border-color: #b698fb;
 }
 
+.dark .button:focus {
+    border-color: #45386f;
+    box-shadow: 0 0 4px #c3a7ff, 0 0 4px #c3a7ff;
+}
 /* For Team Select */
 .dark .ps-popup button.sel {
     border-color: #c6aeff !important;
@@ -120,7 +175,10 @@
     color: #dbcbff;
 }
 
-.dark .tabbar a.button.subtle-notifying,
+.dark .tabbar a.button.subtle-notifying {
+    color: #dccdff;
+}
+
 .dark button {
     color: #c6aeff;
 }
@@ -143,6 +201,16 @@
     border-color: #c6aeff;
     background: rgba(27, 6, 78, 0.3);
     color: #dbcbff;
+}
+
+.dark .select:disabled {
+    border-color: #c5acff;
+    background: rgba(27, 6, 78, 0.5);
+    color: #d1bdff;
+}
+
+.dark .teamselect:disabled strong {
+    color: #d1bdff;
 }
 
 .dark button {
@@ -187,6 +255,31 @@
     color: #ddd;
 }
 
+.dark .folder .selectFolder,
+.dark .folderlist .foldersep:before,
+.dark .folderlistafter:before, 
+.dark .folderlistbefore:before,
+.dark .folderpane h3 {
+    border-right: 1px solid #967de2;
+}
+
+.dark .folder .selectFolder:hover {
+    background: rgba(27, 6, 78, 0.2);
+}
+
+.dark .folder.cur .selectFolder:hover {
+    background: transparent;
+}
+
+.dark .folder.cur .selectFolder,
+.dark .folder.cur .selectFolder:hover,
+.dark .folder.cur .selectFolder:active {
+    border-top: 1px solid #947ae9;
+    border-bottom: 1px solid #947ae9;
+    border-left: 1px solid #947ae9;
+    border-right: 0;
+}
+
 /* Tables */
 .dark .ladder table,
 .dark .ladder td,
@@ -200,14 +293,18 @@
 }
 
 /* Scrollbar */
+.dark .folderpane::-webkit-scrollbar {
+    width: 0px;
+}
+
 .dark ::-webkit-scrollbar {
-    width: 8px
+    width: 8px;
 }
 
 .dark ::-webkit-scrollbar-thumb {
     border: 3px solid transparent;
     background-color: rgba(27, 6, 78, 0.6);
-    border-radius: 5px
+    border-radius: 5px;
 }
 
 .dark ::-webkit-scrollbar-track-piece {
