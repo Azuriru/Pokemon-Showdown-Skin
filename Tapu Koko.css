@@ -1,3 +1,4 @@
+/* Header */
 .dark .header {
     background: rgba(15, 27, 48, 0.3);
 }
@@ -6,7 +7,11 @@
     background: rgba(12, 0, 41, 0.4);
 }
 
-.dark .ps-room.ps-room-light, .dark .tournament-box, .dark .tournament-status, .dark .tournament-toggle, .dark .pm-log-add {
+.dark .ps-room.ps-room-light,
+.dark .tournament-box,
+.dark .tournament-status,
+.dark .tournament-toggle,
+.dark .pm-log-add {
     background: rgba(12, 0, 41, 0.5);
     color: #f3f3f3;
 }
@@ -40,6 +45,19 @@
     color: #bdbdbd !important;
 }
 
+.dark .textbox,
+.dark .textbox:hover {
+    border-color: #45386f;
+    box-shadow: none;
+    background: rgba(12, 0, 41, 0.2);
+    color: #ddd;
+}
+
+.dark ::-webkit-input-placeholder {
+    color: #ddd;
+}
+
+/* Buttons */
 .dark .roomlist a.ilink {
     border-color: #9a81d5;
     background: rgba(27, 6, 78, 0.4);
@@ -53,19 +71,57 @@
     color: #dbcbff;
 }
 
-.dark .button, .dark .tabbar a.button, .dark .popupmenu button.button, .dark button {
+.dark .tabbar .button,
+.dark .tabbar a.button,
+.dark .roomlist .button,
+.dark .popupmenu button.button,
+.dark .userbar button,
+.dark .pad button,
+.dark .ps-popup button,
+.dark .teampane button:not([name=edit]):not([name=newTop]):not([name=delete]),
+.dark .teampane > p:nth-of-type(3) button {
     background: rgba(27, 6, 78, 0.5);
     border-color: #987fdb;
     transition: .5s; 
     color: #c4aaff;
 }
 
-.dark .button:hover, .dark .tabbar a.button:hover, .dark button:hover {
+.dark .tabbar .button:hover,
+.dark .tabbar a.button:hover,
+.dark .roomlist .button:hover,
+.dark .popupmenu button:hover,
+.dark .userbar button:hover,
+.dark .pad button:hover,
+.dark .ps-popup button:hover,
+.dark .teampane button:not([name=edit]):not([name=newTop]):not([name=delete]):hover,
+.dark .teampane > p:nth-of-type(3) button:hover {
     background: rgba(27, 6, 78, 0.9);
     border-color: #b698fb;
 }
 
-.dark .tabbar a.button.subtle-notifying, .dark button {
+/* For Team Select */
+.dark .ps-popup button.sel {
+    border-color: #c6aeff !important;
+    background: rgba(27, 6, 78, 0.3);
+    color: #dbcbff !important;
+}
+
+.dark .ps-popup button[name="selectTeam"],
+.dark .ps-popup button[name="selectFormat"] {
+    border-color: transparent;
+    background: transparent;
+}
+
+.dark .ps-popup button[name="selectTeam"]:hover,
+.dark .ps-popup button[name="selectFormat"]:hover,
+.dark .teamlist button:hover {
+    border-color: #c6aeff;
+    background: rgba(27, 6, 78, 0.3);
+    color: #dbcbff;
+}
+
+.dark .tabbar a.button.subtle-notifying,
+.dark button {
     color: #c6aeff;
 }
 
@@ -74,9 +130,19 @@
     border-color: #c6aeff;
 }
 
-.dark .button.cur, .dark .button.cur:hover, .dark .tabbar a.button.cur, .dark .tabbar a.button.cur:hover {
+.dark .button.cur,
+.dark .button.cur:hover,
+.dark .tabbar a.button.cur,
+.dark .tabbar a.button.cur:hover {
     background: rgba(27, 6, 78, 0.6);
     border-color: #c6aeff;
+}
+
+.dark .select:hover,
+.dark .team.team-hover {
+    border-color: #c6aeff;
+    background: rgba(27, 6, 78, 0.3);
+    color: #dbcbff;
 }
 
 .dark button {
@@ -101,8 +167,30 @@
     box-shadow: 2px 2px 3px rgba(12, 0, 41, 0.2);
 }
 
+.dark .popupmenu h3 {
+    color: #d9caff;
+}
+
+/* Teambuilder */
+.dark .folderpane {
+    border-left-color: rgba(12, 0, 41, 0.3);
+}
+
+.dark .folderlist .foldersep:before,
+.dark .folderlistafter:before,
+.dark .folderlistbefore:before,
+.dark .folderpane h3,
+.dark .folder .selectFolder,
+.dark .folderhack1,
+.dark .folderhack2 {
+    background: rgba(12, 0, 41, 0.3);
+    color: #ddd;
+}
+
 /* Tables */
-.dark .ladder table, .dark .ladder td, .dark .ladder th {
+.dark .ladder table,
+.dark .ladder td,
+.dark .ladder th {
     border: 1px solid #c5acff;
 }
 
