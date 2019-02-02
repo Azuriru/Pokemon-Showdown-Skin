@@ -28,12 +28,17 @@
     border-right: 1px solid #c4aaff
 }
 
+.dark .userlist strong,
+.dark .userlist span {
+    text-shadow: 0 0 0 #0c0029, 0 0 0 #0c0029, 0 0 0 #0c0029;
+}
+
 .dark .userlist li button {
     transition: .5s;
 }
 
 .dark .userlist li button:hover {
-    background: rgba(12, 0, 41, 0.3);
+    background: rgba(36, 0, 123, 0.3);
 }
 
 .dark .chat-log {
@@ -112,6 +117,10 @@
     color: #dbcbff;
 }
 
+.dark .userlist li {
+    border-bottom-color: #987fdb;
+}
+
 .dark .tabbar a.button.notifying {
     background: #c5acff;
     border-color: #947ae9;
@@ -124,6 +133,7 @@
 
 .dark .tabbar .button,
 .dark .tabbar a.button,
+.dark .battleform .cancel button,
 .dark .roomlist .button,
 .dark .popupmenu button.button,
 .dark .userbar button,
@@ -131,7 +141,13 @@
 .dark .ps-popup button,
 .dark .teampane button:not([name=edit]):not([name=newTop]):not([name=delete]),
 .dark .teampane p button,
-.dark .chat-log button {
+.dark .teamchart button.big,
+.dark .format-select button,
+.dark .chat-log button,
+.dark .suggested button,
+.dark .statform select,
+.dark .ps-popup select,
+.dark .ps-popup input {
     background: rgba(27, 6, 78, 0.5);
     border-color: #987fdb;
     transition: .5s; 
@@ -140,6 +156,7 @@
 
 .dark .tabbar .button:hover,
 .dark .tabbar a.button:hover,
+.dark .battleform .cancel button:hover,
 .dark .roomlist .button:hover,
 .dark .popupmenu button:hover,
 .dark .userbar button:hover,
@@ -147,15 +164,26 @@
 .dark .ps-popup button:hover,
 .dark .teampane button:not([name=edit]):not([name=newTop]):not([name=delete]):hover,
 .dark .teampane p button:hover,
-.dark .chat-log button:hover {
+.dark .teamchart button.big:hover,
+.dark .format-select button:hover,
+.dark .chat-log button:hover,
+.dark .setmenu button:hover,
+.dark .suggested button:hover,
+.dark .statform select:hover,
+.dark .ps-popup select:hover {
     background: rgba(27, 6, 78, 0.9);
     border-color: #b698fb;
+}
+
+.dark .bglist button:hover {
+    color: #dbcbff;
 }
 
 .dark .button:focus {
     border-color: #45386f;
     box-shadow: 0 0 4px #c3a7ff, 0 0 4px #c3a7ff;
 }
+
 /* For Team Select */
 .dark .ps-popup button.sel {
     border-color: #c6aeff !important;
@@ -280,6 +308,100 @@
     border-bottom: 1px solid #947ae9;
     border-left: 1px solid #947ae9;
     border-right: 0;
+}
+
+/* In the actual team */
+.dark .setchart, 
+.dark .setchart-nickname {
+    background-color: rgba(27, 6, 78, 0.5);
+    box-shadow: none;
+    border: 1px solid #443773;
+}
+
+.dark .setchart label,
+.dark .setchart-nickname label,
+.dark .setchart .statrow-head em {
+    color: #d7caff;
+}
+
+.dark .teamchartbox {
+    border-top: 1px solid #c5acff;
+}
+
+.dark .utilichart .sortrow {
+    background: rgba(66, 51, 123, 0.8);
+    color: #f1f1f1;
+    border: 1px solid #c5acff;
+}
+
+.dark .utilichart .sortcol {
+    color: #f1f1f1;
+}
+
+.dark .utilichart .sortcol.numsortcol.cur,
+.dark .utilichart .sortcol.numsortcol.cur:hover {
+    background: rgba(148, 122, 233, 0.3);
+    cursor: default;
+    color: #f1f1f1;
+}
+
+.dark .utilichart .sortcol:hover {
+    background: rgba(148, 122, 233, 0.3);
+}
+
+.dark .utilichart .sortcol.cur {
+    background: rgba(196, 170, 255, 0.3);
+}
+
+.dark .setcol-icon label {
+    text-shadow: #1b124e 1px 1px 0, #1b124e 1px -1px 0, #1b124e -1px 1px 0, #1b124e -1px -1px 0;
+}
+
+.dark .setdetails .detailcell {
+    border-left: 1px solid #433677;
+}
+
+.dark .teambar button {
+    background: rgba(27, 6, 78, 0.5);
+    color: #f1f1f1;
+    border: 1px solid #433677;
+}
+
+.dark .teambar button:disabled,
+.dark .teambar button:disabled:hover,
+.dark .teambar button:disabled:active {
+    color: #fff;
+    background: rgba(27, 6, 78, 0.7);
+    border-color: #7763c1;
+}
+
+.dark .teambar button:hover {
+    background: rgba(148, 122, 233, 0.3);
+    color: #f1f1f1;
+    border: 1px solid #967de2;
+}
+
+.dark .utilichart h3,
+.dark .dexentry h3,
+.dark .resultheader h3 {
+    background: rgba(66, 51, 123, 0.8);
+    color: #f1f1f1;
+    border: 1px solid #c5acff;
+}
+
+.dark .teambuilder-results .result a.cur {
+    border-color: #433677;
+    background: rgba(27, 6, 78, 0.3);
+}
+
+.dark .teambuilder-results .result a.hover,
+.dark .teambuilder-results .result a:hover,
+.dark .teambuilder-results .result a.cur:hover,
+.dark .setmenu button:hover,
+.dark .teamlist button:hover {
+    border-color: #967de2;
+    background: rgba(148, 122, 233, 0.2);
+    color: #fff;
 }
 
 /* Tables */
