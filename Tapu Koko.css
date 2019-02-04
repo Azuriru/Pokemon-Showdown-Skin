@@ -96,6 +96,12 @@
     background: rgba(255, 255, 255, 0.03);
 }
 
+.dark .challenge {
+    background: rgba(196, 170, 255, 0.5);
+    border: 1px solid #c4aaff;
+    color: #2f1b64;
+}
+
 .dark .minimizebutton:hover, 
 .dark .pm-window h3:hover .minimizebutton,
 .dark .closebutton:hover,
@@ -122,18 +128,19 @@
 }
 
 .dark .tabbar a.button.notifying {
-    background: #c5acff;
-    border-color: #947ae9;
+    background: #c5acff !important; 
+    border-color: #947ae9 !important; 
     color: #534c6a;
 }
 
 .dark .tabbar a.button.notifying:hover {
-    background: #e0d2ff;
+    background: #e0d2ff !important;
+    color: #534c6a;
 }
 
 .dark .tabbar .button,
 .dark .tabbar a.button,
-.dark .battleform .cancel button,
+.dark .battleform .buttonbar button,
 .dark .roomlist .button,
 .dark .popupmenu button.button,
 .dark .userbar button,
@@ -144,19 +151,24 @@
 .dark .teamchart button.big,
 .dark .format-select button,
 .dark .chat-log button,
+.dark .challenge .buttonbar button,
 .dark .suggested button,
 .dark .statform select,
 .dark .ps-popup select,
-.dark .ps-popup input {
+.dark .ps-popup input,
+.dark .battle-log button,
+.dark .switchmenu button,
+.dark .whatdo button {
     background: rgba(27, 6, 78, 0.5);
     border-color: #987fdb;
     transition: .5s; 
     color: #c4aaff;
+    box-shadow: none;
 }
 
 .dark .tabbar .button:hover,
 .dark .tabbar a.button:hover,
-.dark .battleform .cancel button:hover,
+.dark .battleform .buttonbar button:hover,
 .dark .roomlist .button:hover,
 .dark .popupmenu button:hover,
 .dark .userbar button:hover,
@@ -167,10 +179,14 @@
 .dark .teamchart button.big:hover,
 .dark .format-select button:hover,
 .dark .chat-log button:hover,
+.dark .challenge .buttonbar button:hover,
 .dark .setmenu button:hover,
 .dark .suggested button:hover,
 .dark .statform select:hover,
-.dark .ps-popup select:hover {
+.dark .ps-popup select:hover,
+.dark .battle-log button:hover,
+.dark .switchmenu button:hover,
+.dark .whatdo button:hover {
     background: rgba(27, 6, 78, 0.9);
     border-color: #b698fb;
 }
@@ -404,7 +420,7 @@
     color: #fff;
 }
 
-/* Tables */
+/* Ladder */
 .dark .ladder table,
 .dark .ladder td,
 .dark .ladder th {
@@ -416,6 +432,51 @@
     color: #000;
 }
 
+/* Battle */
+.dark .whatdo {
+    color: #f0e9ff;
+}
+
+.dark .battle-controls {
+    background: transparent;
+}
+
+.dark .ps-room.ps-room-opaque,
+.dark .battle-log-add {
+    background: rgba(27, 6, 78, 0.5);
+}
+
+.dark .battle-log,
+.dark .battle-log-add {
+    border: 1px solid #c5acff;
+}
+
+.dark .battle-log,
+.dark .userlist-minimized {
+    background: rgba(27, 6, 78, 0.2);
+    color: #f0e9ff;
+}
+
+.dark .userlist-maximized {
+    background: rgba(27, 6, 78, 0.8);
+    color: #f0e9ff;
+}
+
+.dark .userlist-minimized {
+    border-bottom: 1px solid #c5acff;
+}
+
+.dark .userlist-minimized .userlist-count:hover,
+.dark .userlist-maximized .userlist-count:hover {
+    background: rgba(27, 6, 78, 0.5);
+}
+
+.dark .battle-log .chat > strong,
+.dark .battle-log .chat > em,
+.dark .battle-log .chat > q {
+    color: #c7b0ff !important;
+}
+ 
 /* Scrollbar */
 .dark .folderpane::-webkit-scrollbar {
     width: 0px;
@@ -435,3 +496,5 @@
     background-color: rgba(27, 6, 78, 0.4);
     background-clip: padding-box;
 }
+
+
