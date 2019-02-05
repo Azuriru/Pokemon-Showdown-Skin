@@ -47,7 +47,7 @@
 }
 
 .dark .chat small {
-    color: #ccc;
+    color: #dbcbff;
 }
 
 .dark .message small {
@@ -156,9 +156,15 @@
 .dark .statform select,
 .dark .ps-popup select,
 .dark .ps-popup input,
+.dark .ps-popup .button,
 .dark .battle-log button,
+.dark .battle-controls button,
+.dark .battle-chat-toggle,
 .dark .switchmenu button,
-.dark .whatdo button {
+.dark .switchselect button,
+.dark .whatdo button,
+.dark .controls button,
+.dark .movemenu label {
     background: rgba(27, 6, 78, 0.5);
     border-color: #987fdb;
     transition: .5s; 
@@ -184,9 +190,15 @@
 .dark .suggested button:hover,
 .dark .statform select:hover,
 .dark .ps-popup select:hover,
+.dark .ps-popup .button:hover,
 .dark .battle-log button:hover,
+.dark .battle-controls button:hover,
+.dark .battle-chat-toggle:hover,
 .dark .switchmenu button:hover,
-.dark .whatdo button:hover {
+.dark .switchselect button:hover,
+.dark .whatdo button:hover,
+.dark .controls button:hover,
+.dark .movemenu label:hover  {
     background: rgba(27, 6, 78, 0.9);
     border-color: #b698fb;
 }
@@ -453,7 +465,7 @@
 
 .dark .battle-log,
 .dark .userlist-minimized {
-    background: rgba(27, 6, 78, 0.2);
+    background: rgba(27, 6, 78, 0.7);
     color: #f0e9ff;
 }
 
@@ -476,7 +488,44 @@
 .dark .battle-log .chat > q {
     color: #c7b0ff !important;
 }
- 
+
+.dark .broadcast-red {
+    background-color: #c6aeff;
+    color: #1e0858;
+}
+
+.dark .chat code,
+.dark .ps-popup code,
+.dark .chat .spoiler:hover code,
+.dark .chat .spoiler:active code,
+.dark .chat .spoiler-shown code {
+    border-color: #9177f1;
+    background: rgb(27, 6, 78);
+}
+
+.dark .rightbar,
+.dark .leftbar {
+    background-color: rgba(27, 6, 78, 0.5);
+    border-left: 1px solid rgb(150, 125, 226);
+    color: #c4aaff;
+}
+
+.dark .button.disabled,
+.dark .button.disabled:hover,
+.dark .button.disabled:active,
+.dark .switchmenu button.disabled,
+.dark .switchmenu button:disabled,
+.dark .movemenu button:disabled {
+    background: #c4aaff !important;
+    border-color: #9177f1 !important;
+    color: #524b7c !important;
+
+.dark small.type,
+.dark small.pp {
+    text-shadow: 0 0 20px rgb(0, 0, 0), 0 0 20px rgba(0, 0, 0, 0.4);
+    font-weight: 600;
+}
+
 /* Scrollbar */
 .dark .folderpane::-webkit-scrollbar {
     width: 0px;
@@ -496,5 +545,3 @@
     background-color: rgba(27, 6, 78, 0.4);
     background-clip: padding-box;
 }
-
-
