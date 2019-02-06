@@ -33,6 +33,9 @@
     text-shadow: 0 0 20px #4b00ff, 0 0 20px #0c0029;
 }
 
+.dark .chat .username {
+    text-shadow:  0 0 20px #0c0029;
+}
 .dark .userlist li button {
     transition: .5s;
 }
@@ -52,6 +55,16 @@
 
 .dark .message small {
     color: #e5d8ff !important;
+}
+
+.dark .message-pm {
+    color: #a5a0ff;
+}
+
+.dark .tournament-bracket-tree-node-win > rect {
+    fill: rgba(168, 255, 168, 0.7);
+    stroke: rgba(0, 128, 0, 0.7);
+    color: black;
 }
 
 .dark .textbox,
@@ -75,11 +88,55 @@
     color: #ddd;
 }
 
+.dark a.ilink,
+.dark .message-announce a,
+.dark .broadcast-green a,
+.dark .broadcast-blue a,
+.dark .broadcast-red a {
+    color: #b9a2ff;
+    text-shadow: 0 -15px 2.5px transparent, 0 15px 2.5px transparent;
+    text-decoration: none;
+}
+
+.dark a.ilink:hover,
+.dark .message-announce a:hover,
+.dark .broadcast-green a:hover,
+.dark .broadcast-blue a:hover,
+.dark .broadcast-red a:hover  {
+    text-shadow: 0 0 2.5px #8d67ff, 0 0 2.5px #8d67ff;
+    color: #baa4ff !important;
+    text-decoration: none;
+    -webkit-transition: all .4s linear 0s;
+    -moz-transition: all .4s linear 0s;
+    -ms-transition: all .4s linear 0s;
+    -o-transition: all .4s linear 0s;
+    transition: all .4s linear 0s;
+}
+
 /* Chat */
 .dark .pm-window h3 {
     border: 1px solid  #c6aeff;
     background: rgb(27, 6, 78);
     color: #ddd;
+}
+
+.dark .pm-window h3.pm-notifying,
+.dark .pm-window.focused h3 {
+    background: #d7c7ff;
+    border-color: #6638ff;
+    color: #1a0251;
+}
+
+.dark .pm-window.focused .pm-log,
+.dark .pm-window.focused .pm-log-add {
+    border-color: #c6aeff;
+}
+
+.dark .pm-window.focused h3:hover,
+.dark .pm-window h3.pm-notifying:hover {
+    background: #e5daff;
+    border-color: #6638ff;
+    color: #1a0251;
 }
 
 .dark .pm-log,
@@ -106,7 +163,7 @@
 .dark .pm-window h3:hover .minimizebutton,
 .dark .closebutton:hover,
 .dark .pm-window h3 .closebutton:hover + .minimizebutton {
-    color: #947ae9;
+    color: #947ae9 !important;
 }
 
 /* Buttons */
@@ -138,14 +195,25 @@
     color: #534c6a;
 }
 
+.dark .message-announce {
+    background: rgba(26, 2, 81, 0.7);
+    color: #e1d3ff;
+    padding: 1px 4px 2px;
+}
+
+.dark a.button:visited {
+    color: #c4aaff;
+}
+
 .dark .tabbar .button,
 .dark .tabbar a.button,
 .dark .battleform .buttonbar button,
 .dark .roomlist .button,
 .dark .popupmenu button.button,
 .dark .userbar button,
-.dark .pad button,
+.dark .pad .button,
 .dark .ps-popup button,
+.dark .ps-room .button,
 .dark .teampane button:not([name=edit]):not([name=newTop]):not([name=delete]),
 .dark .teampane p button,
 .dark .teamchart button.big,
@@ -178,8 +246,9 @@
 .dark .roomlist .button:hover,
 .dark .popupmenu button:hover,
 .dark .userbar button:hover,
-.dark .pad button:hover,
+.dark .pad .button:hover,
 .dark .ps-popup button:hover,
+.dark .ps-room .button:hover,
 .dark .teampane button:not([name=edit]):not([name=newTop]):not([name=delete]):hover,
 .dark .teampane p button:hover,
 .dark .teamchart button.big:hover,
@@ -198,7 +267,7 @@
 .dark .switchselect button:hover,
 .dark .whatdo button:hover,
 .dark .controls .button:hover,
-.dark .movemenu label:hover  {
+.dark .movemenu label:hover {
     background: rgba(27, 6, 78, 0.9);
     border-color: #b698fb;
 }
@@ -239,6 +308,7 @@
 
 .dark button {
     color: #c6aeff;
+    border-radius: 5px;
 }
 
 .dark .maintabbarbottom {
@@ -269,10 +339,6 @@
 
 .dark .teamselect:disabled strong {
     color: #d1bdff;
-}
-
-.dark button {
-    border-radius: 5px;
 }
 
 .dark .userbar .username {
