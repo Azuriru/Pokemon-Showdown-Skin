@@ -61,9 +61,51 @@
     color: #a5a0ff;
 }
 
-.dark .tournament-bracket-tree-node-win > rect {
-    fill: rgba(168, 255, 168, 0.7);
+.dark .infobox {
+    border: 1px solid #c5acff;
+}
+
+.dark .infobox span {
+    border: 1px solid #92ea92 !important;
+    color: #5dbb5d !important;
+}
+
+.dark .tournament-wrapper,
+.dark .tournament-box,
+.dark .tournament-toggle {
+    border-color: #c5acff;
+}
+
+.dark .tournament-box,
+.dark .tournament-toggle {
+    border-right: none;
+}
+
+.dark .tournament-title {
+    background: rgba(12, 0, 41, 0.2);
+}
+
+.dark .tournament-bracket-tree-link {
+    stroke: #c5acff;
+}
+
+.dark .tournament-bracket-tree-node > rect {
+    fill: #d5c3ff;
+    stroke: #c5acff;
+    color: black;
+}
+
+.dark .tournament-bracket-tree-node-win > rect,
+.dark .tournament-bracket-tree-node-match-result-win > rect {
+    fill: rgba(168, 255, 168, 0.8);
     stroke: rgba(0, 128, 0, 0.7);
+    color: black;
+}
+
+.dark .tournament-bracket-tree-node-loss > rect,
+.dark .tournament-bracket-tree-node-match-result-loss > rect  {
+    fill: rgba(253, 164, 164, 0.8);
+    stroke: rgba(255, 40, 40, 0.7);
     color: black;
 }
 
@@ -235,7 +277,7 @@
 .dark .movemenu label {
     background: rgba(27, 6, 78, 0.5);
     border-color: #987fdb;
-    transition: .5s; 
+    transition: .5s;
     color: #c4aaff;
     box-shadow: none;
 }
@@ -281,6 +323,10 @@
     box-shadow: 0 0 4px #c3a7ff, 0 0 4px #c3a7ff;
 }
 
+.dark button:not(.userbutton) {
+    border-radius: 5px;
+}
+
 /* For Team Select */
 .dark .ps-popup button.sel {
     border-color: #c6aeff !important;
@@ -308,7 +354,6 @@
 
 .dark button {
     color: #c6aeff;
-    border-radius: 5px;
 }
 
 .dark .maintabbarbottom {
@@ -622,6 +667,11 @@
     .dark .controls {
         background: rgba(27, 6, 78, 0.8);
     }
+}
+
+*:focus {
+    border-color: #45386f;
+    box-shadow: 0 0 4px #c3a7ff, 0 0 4px #c3a7ff;
 }
 
 /* Scrollbar */
