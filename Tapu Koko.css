@@ -130,10 +130,6 @@
     box-shadow: 0 0 4px #c3a7ff, 0 0 4px #c3a7ff;
 }
 
-.dark .chatbox label {
-    text-shadow: 1px 1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, -1px -1px 0 #000;
-}
-
 .dark ::-webkit-input-placeholder {
     color: #ddd;
 }
