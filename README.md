@@ -1,5 +1,8 @@
 # Pokemon Showdown Skin
-Custom Skin for Pokemon Showdown, Dark Mode only.
+Custom Skin for Pokemon Showdown, activates on Dark Mode so you don't go blind on Light Mode.
+
+## Preview 
+![Reshiram Custom Skin](https://i.gyazo.com/efcf3536888fac72ca6dab03ace01c3a.png)
 
 ## Installation
 * Download [Tampermonkey](https://tampermonkey.net/)
@@ -26,3 +29,10 @@ console.log('Reshiram CSS loaded!');
 * Go to [Pokemon Showdown!](https://play.pokemonshowdown.com/)
 * Enable "Reshiram Skin" in the Extensions
 * Reload Pokemon Showdown! if the skin doesn't show.
+
+## Updates
+Usually, if I update this, updates won't show up for you. So here's what you do to set it to auto-update every time, all the time.
+* Open Reshiram Skin on Tampermonkey, you can do this by holding down CMD / Ctrl and clicking the switch for Reshiram Skin on Pokemon Showdown!
+* Go to Settings on the top right
+* Under General, set Config mode to "Advanced"
+* Scroll down to Externals and change the Update Interval to "always"
