@@ -28,7 +28,7 @@ console.log('Reshiram CSS loaded!');
 * Click File > Save when you are done
 * Go to [Pokemon Showdown!](https://play.pokemonshowdown.com/)
 * Enable "Reshiram Skin" in the Extensions
-* Reload Pokemon Showdown! if the skin doesn't show.
+* Reload Pokemon Showdown! if the skin doesn't show
 
 ## Updates
 Usually, if I update this, updates won't show up for you. So here's what you do to set it to auto-update every time, all the time.
@@ -36,3 +36,5 @@ Usually, if I update this, updates won't show up for you. So here's what you do 
 * Go to Settings on the top right
 * Under General, set Config mode to "Advanced"
 * Scroll down to Externals and change the Update Interval to "always"
+
+If an update does not immediately show up, close the tab and re-open it. If it still doesn't show up, restart the browser.
