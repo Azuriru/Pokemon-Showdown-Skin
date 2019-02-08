@@ -264,6 +264,7 @@
 .dark .teampane p button,
 .dark .teamchart button.big,
 .dark .format-select button,
+.dark .pm-log button,
 .dark .chat-log button,
 .dark .chat-log-add button,
 .dark .challenge .buttonbar button,
@@ -300,6 +301,7 @@
 .dark .teampane p button:hover,
 .dark .teamchart button.big:hover,
 .dark .format-select button:hover,
+.dark .pm-log button:hover,
 .dark .chat-log button:hover,
 .dark .chat-log-add button:hover,
 .dark .challenge .buttonbar button:hover,
@@ -615,6 +617,10 @@
 .dark .broadcast-red {
     background-color: #c6aeff;
     color: #1e0858;
+}
+
+.dark .highlighted {
+    background: rgba(198, 174, 255, 0.3);
 }
 
 .dark .chat code,
