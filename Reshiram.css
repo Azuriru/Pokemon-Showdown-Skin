@@ -676,9 +676,13 @@
     }
 }
 
-*:focus {
+.dark *:focus {
     border-color: #45386f;
     box-shadow: 0 0 4px #c3a7ff, 0 0 4px #c3a7ff;
+}
+
+.dark hr {
+    border-top: 1px solid #987fdb;
 }
 
 /* Scrollbar */
