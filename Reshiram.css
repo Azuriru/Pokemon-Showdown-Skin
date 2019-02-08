@@ -134,6 +134,7 @@
     color: #ddd;
 }
 
+.dark a,
 .dark a.ilink,
 .dark .message-announce a,
 .dark .broadcast-green a,
@@ -144,6 +145,7 @@
     text-decoration: none;
 }
 
+.dark a:hover,
 .dark a.ilink:hover,
 .dark .message-announce a:hover,
 .dark .broadcast-green a:hover,
