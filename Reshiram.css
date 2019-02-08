@@ -207,6 +207,10 @@
     color: #2f1b64;
 }
 
+.dark .newsentry.unread {
+    background: rgba(170, 133, 255, 0.5);
+}
+
 .dark .minimizebutton:hover, 
 .dark .pm-window h3:hover .minimizebutton,
 .dark .closebutton:hover,
