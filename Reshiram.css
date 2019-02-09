@@ -620,7 +620,8 @@
     background: #c6aeff;
 }
 
-.dark .broadcast-red {
+.dark .broadcast-red,
+.dark .broadcast-blue {
     background-color: #c6aeff;
     color: #1e0858;
 }
