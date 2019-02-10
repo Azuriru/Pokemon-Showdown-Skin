@@ -612,7 +612,7 @@
     color: #c7b0ff !important;
 }
 
-.battle-log .rated strong {
+.dark .battle-log .rated strong {
     color: #1d006b;
     background: #c6aeff;
 }
