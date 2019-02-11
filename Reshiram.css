@@ -1,3 +1,7 @@
+.dark body {
+    background: url(https://play.pokemonshowdown.com/fx/client-bg-horizon.jpg) center / cover no-repeat fixed #7d56ff;
+}
+
 /* Header */
 .dark .header {
     background: rgba(15, 27, 48, 0.3);
