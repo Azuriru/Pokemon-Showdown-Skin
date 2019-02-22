@@ -329,6 +329,11 @@
     border-color: #b698fb;
 }
 
+.dark .avatarlist button:hover {
+    border-color: #b698fb;
+    background-color: rgba(27, 6, 78, 0.9);
+}
+
 .dark .bglist button:hover {
     color: #dbcbff;
 }
