@@ -265,7 +265,7 @@
 .dark .popupmenu button.button,
 .dark .userbar button,
 .dark .pad button,
-.dark .ps-popup button,
+.dark .ps-popup button:not([name=setAvatar]),
 .dark .ps-room .button,
 .dark .teampane button:not([name=edit]):not([name=newTop]):not([name=delete]),
 .dark .teampane p button,
@@ -288,7 +288,7 @@
 .dark .whatdo button,
 .dark .controls .button,
 .dark .movemenu label {
-    background-color: rgba(27, 6, 78, 0.5);
+    background: rgba(27, 6, 78, 0.5);
     border-color: #987fdb;
     transition: .5s;
     color: #c4aaff;
@@ -302,7 +302,7 @@
 .dark .popupmenu button:hover,
 .dark .userbar button:hover,
 .dark .pad button:hover,
-.dark .ps-popup button:hover,
+.dark .ps-popup button:not([name=setAvatar]):hover,
 .dark .ps-room .button:hover,
 .dark .teampane button:not([name=edit]):not([name=newTop]):not([name=delete]):hover,
 .dark .teampane p button:hover,
@@ -325,7 +325,7 @@
 .dark .whatdo button:hover,
 .dark .controls .button:hover,
 .dark .movemenu label:hover {
-    background-color: rgba(27, 6, 78, 0.9);
+    background: rgba(27, 6, 78, 0.9);
     border-color: #b698fb;
 }
 
