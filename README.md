@@ -51,7 +51,8 @@ document.getElementsByTagName("head")[0].appendChild(link);
 $('head').append($('<link>', {
 	'rel': 'stylesheet',
 	'type': 'text/css',
-	'href': 'https://raw.githack.com/GameModerator/Pokemon-Showdown-Skin/master/Reshiram.css'}));
+	'href': 'https://raw.githack.com/GameModerator/Pokemon-Showdown-Skin/master/Reshiram.css'
+}));
 ```
 
 What else do ya need, man?
