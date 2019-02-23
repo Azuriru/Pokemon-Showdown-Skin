@@ -8,7 +8,7 @@ Custom Skin for Pokemon Showdown, activates on Dark Mode so you don't go blind o
 * Download [Tampermonkey](https://tampermonkey.net/)
 * Click "Create a new script..." on the Extension
 * Paste this in
-```
+```init
 // ==UserScript==
 // @name         Reshiram Skin
 // @namespace    https://play.pokemonshowdown.com/*
@@ -29,3 +29,29 @@ console.log('Reshiram CSS loaded!');
 * Go to [Pokemon Showdown!](https://play.pokemonshowdown.com/)
 * Enable "Reshiram Skin" in the Extensions
 * Reload Pokemon Showdown! if the skin doesn't show
+
+### CSS
+```CSS
+@import url('https://raw.githack.com/GameModerator/Pokemon-Showdown-Skin/master/Reshiram.css')
+```
+
+### JS
+#### Vanilla
+```JS
+var file = 'https://raw.githack.com/GameModerator/Pokemon-Showdown-Skin/master/Reshiram.css';
+var link = document.createElement('link');
+link.href = file;
+link.type = "text/css";
+link.rel = "stylesheet";
+document.getElementsByTagName("head")[0].appendChild(link);
+```
+
+#### jQuery
+```JS
+$('head').append($('<link>', {
+	'rel': 'stylesheet',
+	'type': 'text/css',
+	'href': 'https://raw.githack.com/GameModerator/Pokemon-Showdown-Skin/master/Reshiram.css'}));
+```
+
+What else do ya need, man?
