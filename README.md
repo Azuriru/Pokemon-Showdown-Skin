@@ -17,9 +17,9 @@ Custom Skin for Pokemon Showdown, activates on Dark Mode so you don't go blind o
 // @author       k_OS
 // @match        https://play.pokemonshowdown.com/*
 // @icon         https://www.serebii.net/pokedex-sm/icon/643.png
-// @grant GM_addStyle
-// @grant GM_getResourceText
-// @resource    css  https://raw.githack.com/GameModerator/Pokemon-Showdown-Skin/master/Reshiram.css
+// @grant        GM_addStyle
+// @grant        GM_getResourceText
+// @resource     css  https://raw.githack.com/GameModerator/Pokemon-Showdown-Skin/master/Reshiram.css
 // ==/UserScript==
 
 GM_addStyle(GM_getResourceText('css'));
