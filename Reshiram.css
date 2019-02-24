@@ -70,9 +70,9 @@
     border: 1px solid #c5acff;
 }
 
-.dark .infobox span {
-    border: 1px solid #92ea92 !important;
-    color: #5dbb5d !important;
+.dark .notice span,
+.dark .notice font {
+    color: #e5d8ff !important;
 }
 
 .dark .tournament-wrapper,
