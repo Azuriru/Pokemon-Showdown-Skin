@@ -1,5 +1,5 @@
-# Pokemon Showdown Skin
-Custom Skin for Pokemon Showdown, activates on Dark Mode so you don't go blind on Light Mode.
+# Pokémon Showdown! Skin
+Custom Skin for Pokémon Showdown!, activates on Dark Mode so you don't go blind on Light Mode.
 
 ## Preview 
 ![Reshiram Custom Skin](https://i.gyazo.com/efcf3536888fac72ca6dab03ace01c3a.png)
@@ -26,9 +26,9 @@ GM_addStyle(GM_getResourceText('css'));
 console.log('Reshiram CSS loaded!');
 ```
 * Click File > Save when you are done
-* Go to [Pokemon Showdown!](https://play.pokemonshowdown.com/)
+* Go to [Pokémon Showdown!](https://play.pokemonshowdown.com/)
 * Enable "Reshiram Skin" in the Extensions
-* Reload Pokemon Showdown! if the skin doesn't show
+* Reload Pokémon Showdown! if the skin doesn't show
 
 ### CSS
 ```CSS
