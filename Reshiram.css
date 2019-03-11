@@ -466,6 +466,14 @@
     border-right: 0;
 }
 
+.dark .folder .selectFolder.active, .dark .folder .selectFolder:active {
+    background: rgba(27, 6, 78, 0.6);
+    color: #fff;
+}
+
+.dark .plusonefolder {
+    background: #967de2 !important;
+}
 /* In the actual team */
 .dark .setchart, 
 .dark .setchart-nickname {
