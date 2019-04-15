@@ -476,6 +476,7 @@
 .dark .plusonefolder {
     background: #967de2 !important;
 }
+
 /* In the actual team */
 .dark .setchart, 
 .dark .setchart-nickname {
@@ -553,6 +554,22 @@
     background: rgba(66, 51, 123, 0.8);
     color: #f1f1f1;
     border: 1px solid #c5acff;
+}
+
+.dark .teambuilder-clipboard-container {
+    border-color: #987fdb;
+}
+
+.dark .teambuilder-clipboard-data {
+    border-color: #c6aeff;
+    background: rgba(27, 6, 78, 0.6);
+    color: #fff;
+}
+
+.dark .teambuilder-clipboard-data:hover {
+    border-color: #c6aeff;
+    background: rgba(27, 6, 78, 0.3);
+    color: #dbcbff;
 }
 
 .dark .teambuilder-results .result a.cur {
