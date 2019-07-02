@@ -1,0 +1,792 @@
+#teamSearchBar {
+    font-size: 12pt;
+    padding: 5px 10px;
+    border-color: #987fdb;
+    color: #c6aeff;
+}
+
+body.moonlit {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(https://cdn.discordapp.com/attachments/238354899291734017/580301729795538954/Moonlight.png) top center / cover no-repeat fixed !important;
+}
+
+body.moonlit::before {
+    content: '';
+    background-image: url(https://cdn.discordapp.com/attachments/238354899291734017/580301729795538954/Moonlight.png) !important; 
+    background-color: #241150;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+    /* filter: brightness(.65) contrast(1.1) blur(0px); */ /* Blur up to the user */
+}
+
+/* Header */
+.moonlit .header {
+    background: transparent;
+}
+
+.moonlit .userbar .username {
+    filter: brightness(120%);
+    text-shadow: 1px 1px 0 #1b0543, 1px -1px 0 #1b0543, -1px 1px 0 #1b0543, -1px -1px 0 #1b0543;
+}
+
+.moonlit .select:after {
+    color: #c4aaff;
+}
+
+.moonlit .menugroup {
+    background: rgba(58, 35, 109, 0.1);
+}
+
+.moonlit .ps-room.ps-room-light,
+.moonlit .tournament-box,
+.moonlit .tournament-status,
+.moonlit .tournament-toggle,
+.moonlit .pm-log-add {
+    background: rgba(12, 0, 41, 0.6);
+    color: #f3f3f3;
+}
+
+.moonlit .ps-room {
+    border-left: 1px solid #c5acff;
+    background: transparent;
+}
+
+.moonlit .userlist {
+    border-right: 1px solid #c4aaff
+}
+
+.moonlit .userlist strong,
+.moonlit .userlist span {
+    text-shadow: 0 0 20px #4b00ff, 0 0 20px #0c0029;
+    filter: brightness(135%);
+}
+
+.moonlit .chat .username {
+    text-shadow:  0 0 20px #0c0029;
+    filter: brightness(130%);
+}
+.moonlit .userlist li button {
+    transition: .5s;
+}
+
+.moonlit .userlist li button:hover {
+    background: rgba(36, 0, 123, 0.3);
+}
+
+.moonlit .chat-log {
+    background: rgba(12, 0, 41, 0.2);
+    color: #ddd;
+}
+
+.moonlit .chatbox label {
+    text-shadow: 1px 1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, -1px -1px 0 #000;
+}
+
+.moonlit .chat small {
+    color: #dbcbff;
+}
+
+.moonlit .message small {
+    color: #e5d8ff !important;
+}
+
+.moonlit .message-pm {
+    color: #a5a0ff;
+}
+
+.moonlit .infobox {
+    border: 1px solid #c5acff;
+}
+
+.moonlit .notice span,
+.moonlit .notice font {
+    color: #e5d8ff !important;
+}
+
+.moonlit .tournament-wrapper,
+.moonlit .tournament-box,
+.moonlit .tournament-toggle {
+    border-color: #c5acff;
+}
+
+.moonlit .tournament-box,
+.moonlit .tournament-toggle {
+    border-right: none;
+}
+
+.moonlit .tournament-title {
+    background: rgba(12, 0, 41, 0.2);
+}
+
+.moonlit .tournament-bracket-tree-link {
+    stroke: #c5acff;
+}
+
+.moonlit .tournament-bracket-tree-node > rect {
+    fill: #d5c3ff;
+    stroke: #c5acff;
+    color: black;
+}
+
+.moonlit .tournament-bracket-tree-node-win > rect,
+.moonlit .tournament-bracket-tree-node-match-result-win > rect {
+    fill: rgba(168, 255, 168, 0.8);
+    stroke: rgba(0, 128, 0, 0.7);
+    color: black;
+}
+
+.moonlit .tournament-bracket-tree-node-loss > rect,
+.moonlit .tournament-bracket-tree-node-match-result-loss > rect  {
+    fill: rgba(253, 164, 164, 0.8);
+    stroke: rgba(255, 40, 40, 0.7);
+    color: black;
+}
+
+.moonlit .textbox,
+.moonlit .textbox:hover {
+    border-color: #45386f;
+    box-shadow: none;
+    background: rgba(12, 0, 41, 0.2);
+    color: #ddd;
+}
+
+.moonlit .textbox:focus {
+    background: rgba(12, 0, 41, 0.2);
+}
+
+.moonlit .textbox:focus {
+    border-color: #45386f;
+    box-shadow: 0 0 4px #c3a7ff, 0 0 4px #c3a7ff;
+}
+
+.moonlit ::-webkit-input-placeholder {
+    color: #c6aeff;
+}
+
+.moonlit a,
+.moonlit a.ilink,
+.moonlit .message-announce a,
+.moonlit .broadcast-green a,
+.moonlit .broadcast-blue a,
+.moonlit .broadcast-red a {
+    color: #b9a2ff;
+    text-shadow: 0 -15px 2.5px transparent, 0 15px 2.5px transparent;
+    text-decoration: none;
+}
+
+.moonlit a:hover,
+.moonlit a.ilink:hover,
+.moonlit .message-announce a:hover,
+.moonlit .broadcast-green a:hover,
+.moonlit .broadcast-blue a:hover,
+.moonlit .broadcast-red a:hover  {
+    text-shadow: 0 0 2.5px #8d67ff, 0 0 2.5px #8d67ff;
+    color: #baa4ff !important;
+    text-decoration: none;
+    -webkit-transition: all .4s linear 0s;
+    -moz-transition: all .4s linear 0s;
+    -ms-transition: all .4s linear 0s;
+    -o-transition: all .4s linear 0s;
+    transition: all .4s linear 0s;
+}
+
+/* Chat */
+.moonlit .pm-window h3 {
+    border: 1px solid  #c6aeff;
+    background: rgb(27, 6, 78);
+    color: #ddd;
+}
+
+.moonlit .pm-window h3.pm-notifying,
+.moonlit .pm-window.focused h3 {
+    background: #d7c7ff;
+    border-color: #6638ff;
+    color: #1a0251;
+}
+
+.moonlit .pm-window.focused .pm-log,
+.moonlit .pm-window.focused .pm-log-add {
+    border-color: #c6aeff;
+}
+
+.moonlit .pm-window.focused h3:hover,
+.moonlit .pm-window h3.pm-notifying:hover {
+    background: #e5daff;
+    border-color: #6638ff;
+    color: #1a0251;
+}
+
+.moonlit .pm-log,
+.moonlit .pm-log-add {
+    border-color: #c6aeff;
+}
+
+.moonlit .pm-log {
+    background: rgba(12, 0, 41, 0.7);
+    color: #ddd;
+}
+
+.moonlit .chat.mine {
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.moonlit .challenge {
+    background: rgba(196, 170, 255, 0.5);
+    border: 1px solid #c4aaff;
+    color: #2f1b64;
+}
+
+.moonlit .newsentry.unread {
+    background: rgba(170, 133, 255, 0.5);
+}
+
+.moonlit .minimizebutton:hover, 
+.moonlit .pm-window h3:hover .minimizebutton,
+.moonlit .closebutton:hover,
+.moonlit .pm-window h3 .closebutton:hover + .minimizebutton {
+    color: #947ae9 !important;
+}
+
+/* Buttons */
+.moonlit .roomlist a.ilink {
+    border-color: #9a81d5;
+    background: rgba(27, 6, 78, 0.4);
+    color: #c7b0ff;
+    transition: .5s;
+}
+
+.moonlit .roomlist a.ilink:hover {
+    border-color: #c6aeff;
+    background: rgba(27, 6, 78, 0.3);
+    color: #dbcbff;
+}
+
+.moonlit .userlist li {
+    border-bottom-color: #987fdb;
+}
+
+.moonlit .tabbar a.button.notifying {
+    background: #c5acff !important; 
+    border-color: #947ae9 !important; 
+    color: #534c6a;
+}
+
+.moonlit .tabbar a.button.notifying:hover {
+    background: #e0d2ff !important;
+    color: #534c6a;
+}
+
+.moonlit .message-announce {
+    background: rgba(26, 2, 81, 0.7);
+    color: #e1d3ff;
+    padding: 1px 4px 2px;
+}
+
+.moonlit a.button:visited {
+    color: #c4aaff;
+}
+
+.moonlit .tabbar .button,
+.moonlit .tabbar a.button,
+.moonlit .battleform .buttonbar button,
+.moonlit .roomlist .button,
+.moonlit .popupmenu button.button,
+.moonlit .userbar button,
+.moonlit .pad button,
+.moonlit .ps-popup button:not([name=setAvatar]),
+.moonlit .ps-room .button,
+.moonlit .teampane button:not([name=edit]):not([name=newTop]):not([name=delete]),
+.moonlit .teampane p button,
+.moonlit .teamchart button,
+.moonlit .pokemonedit-buttons button,
+.moonlit .format-select button,
+.moonlit .pm-log button,
+.moonlit .chat-log button,
+.moonlit .chat-log-add button,
+.moonlit .challenge .buttonbar button,
+.moonlit .suggested button,
+.moonlit .statform select,
+.moonlit .ps-popup select,
+.moonlit .ps-popup input,
+.moonlit .ps-popup .button,
+.moonlit .battle-log button,
+.moonlit .battle-log-add button,
+.moonlit .battle-controls button,
+.moonlit .battle-chat-toggle,
+.moonlit .switchmenu button,
+.moonlit .switchselect button,
+.moonlit .whatdo button,
+.moonlit .controls .button,
+.moonlit .movemenu label {
+    background: rgba(27, 6, 78, 0.7);
+    border-color: #987fdb;
+    transition: .5s;
+    color: #c4aaff;
+    box-shadow: none;
+}
+
+.moonlit .tabbar .button:hover,
+.moonlit .tabbar a.button:hover,
+.moonlit .battleform .buttonbar button:hover,
+.moonlit .roomlist .button:hover,
+.moonlit .popupmenu button:hover,
+.moonlit .userbar button:hover,
+.moonlit .pad button:hover,
+.moonlit .ps-popup button:not([name=setAvatar]):hover,
+.moonlit .ps-room .button:hover,
+.moonlit .teampane button:not([name=edit]):not([name=newTop]):not([name=delete]):hover,
+.moonlit .teampane p button:hover,
+.moonlit .teamchart button:hover,
+.moonlit .pokemonedit-buttons button:hover,
+.moonlit .format-select button:hover,
+.moonlit .pm-log button:hover,
+.moonlit .chat-log button:hover,
+.moonlit .chat-log-add button:hover,
+.moonlit .challenge .buttonbar button:hover,
+.moonlit .setmenu button:hover,
+.moonlit .suggested button:hover,
+.moonlit .statform select:hover,
+.moonlit .ps-popup select:hover,
+.moonlit .ps-popup .button:hover,
+.moonlit .battle-log button:hover,
+.moonlit .battle-log-add button:hover,
+.moonlit .battle-controls button:hover,
+.moonlit .battle-chat-toggle:hover,
+.moonlit .switchmenu button:hover,
+.moonlit .switchselect button:hover,
+.moonlit .whatdo button:hover,
+.moonlit .controls .button:hover,
+.moonlit .movemenu label:hover {
+    background: rgba(27, 6, 78, 0.9);
+    border-color: #b698fb;
+}
+
+.moonlit .avatarlist button:hover {
+    border-color: #b698fb;
+    background-color: rgba(27, 6, 78, 0.9);
+}
+
+.moonlit .bglist button:hover {
+    color: #dbcbff;
+}
+
+.moonlit .button:focus {
+    border-color: #45386f;
+    box-shadow: 0 0 4px #c3a7ff, 0 0 4px #c3a7ff;
+}
+
+.moonlit button:not(.userbutton) {
+    border-radius: 5px;
+}
+
+/* For Team Select */
+.moonlit .ps-popup button.sel {
+    border-color: #c6aeff !important;
+    background: rgba(27, 6, 78, 0.3);
+    color: #dbcbff !important;
+}
+
+.moonlit .ps-popup button[name="selectTeam"],
+.moonlit .ps-popup button[name="selectFormat"] {
+    border-color: transparent;
+    background: transparent;
+}
+
+.moonlit .ps-popup button[name="selectTeam"]:hover,
+.moonlit .ps-popup button[name="selectFormat"]:hover,
+.moonlit .teamlist button:hover {
+    border-color: #c6aeff;
+    background: rgba(27, 6, 78, 0.3);
+    color: #dbcbff;
+}
+
+.moonlit .tabbar a.button.subtle-notifying {
+    color: #dccdff;
+}
+
+.moonlit button {
+    color: #c6aeff;
+}
+
+.moonlit .maintabbarbottom {
+    background: rgba(27, 6, 78, 0.75);
+    border-color: #c6aeff;
+}
+
+.moonlit .button.cur,
+.moonlit .button.cur:hover,
+.moonlit .tabbar a.button.cur,
+.moonlit .tabbar a.button.cur:hover {
+    background: rgba(27, 6, 78, 0.75);
+    border-color: #c6aeff;
+    border-bottom: none !important;
+}
+
+.moonlit .select:hover,
+.moonlit .team.team-hover {
+    border-color: #c6aeff;
+    background: rgba(27, 6, 78, 0.3);
+    color: #dbcbff;
+}
+
+.moonlit .select:disabled {
+    border-color: #c5acff;
+    background: rgba(27, 6, 78, 0.5);
+    color: #d1bdff;
+}
+
+.moonlit .teamselect:disabled strong {
+    color: #d1bdff;
+}
+
+.moonlit .select,
+.moonlit .team {
+    border-color: #c6aeff;
+    background: rgba(27, 6, 78, 0.6);
+    color: #fff;
+}
+
+.moonlit .ps-popup {
+    background: rgba(12, 0, 41, 0.75);
+    color: #ddd;
+    border-color: #9a81d5;
+    box-shadow: 2px 2px 3px rgba(12, 0, 41, 0.2);
+}
+
+.moonlit .popupmenu h3 {
+    color: #d9caff;
+}
+
+/* Teambuilder */
+.moonlit .folderpane {
+    border-left-color: rgba(12, 0, 41, 0.3);
+}
+
+.moonlit .folderpane i,
+.moonlit .setmenu button, .moonlit .teamlist button,
+.moonlit .folder.cur .selectFolder,
+.moonlit .utilichart .namecol,
+.moonlit .utilichart .pokemonnamecol,
+.moonlit .utilichart .movenamecol {
+    color: #e2d6ff;
+}
+
+.moonlit .folderlist .foldersep:before,
+.moonlit .folderlistafter:before,
+.moonlit .folderlistbefore:before,
+.moonlit .folderpane h3,
+.moonlit .folder .selectFolder,
+.moonlit .folderhack1,
+.moonlit .folderhack2 {
+    background: rgba(12, 0, 41, 0.3);
+    color: #e2d6ff;
+}
+
+.moonlit .folder .selectFolder,
+.moonlit .folderlist .foldersep:before,
+.moonlit .folderlistafter:before, 
+.moonlit .folderlistbefore:before,
+.moonlit .folderpane h3 {
+    border-right: 1px solid #967de2;
+}
+
+.moonlit .folder .selectFolder:hover {
+    background: rgba(27, 6, 78, 0.2);
+}
+
+.moonlit .folder.cur .selectFolder:hover {
+    background: transparent;
+}
+
+.moonlit .folder.cur .selectFolder,
+.moonlit .folder.cur .selectFolder:hover,
+.moonlit .folder.cur .selectFolder:active {
+    border-top: 1px solid #947ae9;
+    border-bottom: 1px solid #947ae9;
+    border-left: 1px solid #947ae9;
+    border-right: 0;
+}
+
+.moonlit .folder .selectFolder.active, .moonlit .folder .selectFolder:active {
+    background: rgba(27, 6, 78, 0.6);
+    color: #fff;
+}
+
+.moonlit .plusonefolder {
+    background: #967de2 !important;
+}
+
+/* In the actual team */
+.moonlit .setchart, 
+.moonlit .setchart-nickname {
+    background-color: rgba(27, 6, 78, 0.5);
+    box-shadow: none;
+    border: 1px solid #443773;
+}
+
+.moonlit .setchart label,
+.moonlit .setchart-nickname label,
+.moonlit .setchart .statrow-head em {
+    color: #d7caff;
+}
+
+.moonlit .teamchartbox {
+    border-top: 1px solid #c5acff;
+}
+
+.moonlit .utilichart .sortrow {
+    background: rgba(66, 51, 123, 0.8);
+    color: #f1f1f1;
+    border: 1px solid #c5acff;
+}
+
+.moonlit .utilichart .sortcol {
+    color: #f1f1f1;
+}
+
+.moonlit .utilichart .sortcol.numsortcol.cur,
+.moonlit .utilichart .sortcol.numsortcol.cur:hover {
+    background: rgba(148, 122, 233, 0.3);
+    cursor: default;
+    color: #f1f1f1;
+}
+
+.moonlit .utilichart .sortcol:hover {
+    background: rgba(148, 122, 233, 0.3);
+}
+
+.moonlit .utilichart .sortcol.cur {
+    background: rgba(196, 170, 255, 0.3);
+}
+
+.moonlit .setcol-icon label {
+    text-shadow: #1b124e 1px 1px 0, #1b124e 1px -1px 0, #1b124e -1px 1px 0, #1b124e -1px -1px 0;
+}
+
+.moonlit .setdetails .detailcell {
+    border-left: 1px solid #433677;
+}
+
+.moonlit .teambar button {
+    background: rgba(27, 6, 78, 0.5);
+    color: #f1f1f1;
+    border: 1px solid #433677;
+}
+
+.moonlit .teambar button:disabled,
+.moonlit .teambar button:disabled:hover,
+.moonlit .teambar button:disabled:active {
+    color: #fff;
+    background: rgba(27, 6, 78, 0.7);
+    border-color: #7763c1;
+}
+
+.moonlit .teambar button:hover {
+    background: rgba(148, 122, 233, 0.3);
+    color: #f1f1f1;
+    border: 1px solid #967de2;
+}
+
+.moonlit .utilichart h3,
+.moonlit .dexentry h3,
+.moonlit .resultheader h3 {
+    background: rgba(66, 51, 123, 0.8);
+    color: #f1f1f1;
+    border: 1px solid #c5acff;
+}
+
+.moonlit .teambuilder-clipboard-container {
+    border-color: #987fdb;
+}
+
+.moonlit .teambuilder-clipboard-data {
+    border-color: #c6aeff;
+    background: rgba(27, 6, 78, 0.6);
+    color: #fff;
+}
+
+.moonlit .teambuilder-clipboard-data:hover {
+    border-color: #c6aeff;
+    background: rgba(27, 6, 78, 0.3);
+    color: #dbcbff;
+}
+
+.moonlit .teambuilder-results .result a.cur {
+    border-color: #433677;
+    background: rgba(27, 6, 78, 0.3);
+}
+
+.moonlit .teambuilder-results .result a.hover,
+.moonlit .teambuilder-results .result a:hover,
+.moonlit .teambuilder-results .result a.cur:hover,
+.moonlit .setmenu button:hover,
+.moonlit .teamlist button:hover {
+    border-color: #967de2;
+    background: rgba(148, 122, 233, 0.2);
+    color: #fff;
+}
+
+/* Ladder */
+.moonlit .ladder table,
+.moonlit .ladder td,
+.moonlit .ladder th {
+    border: 1px solid #c5acff;
+}
+
+.moonlit .ladder th {
+    background: #d8c7ff;
+    color: #000;
+}
+
+/* Battle */
+.moonlit .whatdo {
+    color: #f0e9ff;
+}
+
+.moonlit .battle-controls {
+    background: transparent;
+}
+
+.moonlit .ps-room.ps-room-opaque,
+.moonlit .battle-log-add {
+    background: rgba(27, 6, 78, 0.5);
+}
+
+.moonlit .battle-log h2 {
+    background: rgba(27, 6, 78, 0.5);
+    border: 1px solid #c5acff;
+    border-left: none;
+}
+
+.moonlit .battle-log,
+.moonlit .battle-log-add {
+    border: 1px solid #c5acff;
+}
+
+.moonlit .battle-log,
+.moonlit .userlist-minimized {
+    background: rgba(27, 6, 78, 0.7);
+    color: #f0e9ff;
+}
+
+.moonlit .userlist-maximized {
+    background: rgba(27, 6, 78, 0.8);
+    color: #f0e9ff;
+}
+
+.moonlit .userlist-minimized {
+    border-bottom: 1px solid #c5acff;
+}
+
+.moonlit .userlist-minimized .userlist-count:hover,
+.moonlit .userlist-maximized .userlist-count:hover {
+    background: rgba(27, 6, 78, 0.5);
+}
+
+.moonlit .battle-log .chat > strong,
+.moonlit .battle-log .chat > em,
+.moonlit .battle-log .chat > q {
+    color: #c7b0ff !important;
+}
+
+.moonlit .battle-log .rated strong {
+    color: #1d006b;
+    background: #c6aeff;
+}
+
+.moonlit .broadcast-red,
+.moonlit .broadcast-blue {
+    background-color: #c6aeff;
+    color: #1e0858;
+}
+
+.moonlit .highlighted {
+    background: rgba(198, 174, 255, 0.3);
+}
+
+.moonlit .chat code,
+.moonlit .ps-popup code,
+.moonlit .chat .spoiler:hover code,
+.moonlit .chat .spoiler:active code,
+.moonlit .chat .spoiler-shown code {
+    border-color: #9177f1;
+    background: rgb(27, 6, 78);
+}
+
+.moonlit .rightbar,
+.moonlit .leftbar {
+    background-color: rgba(27, 6, 78, 0.5);
+    border-left: 1px solid rgb(150, 125, 226);
+    color: #c4aaff;
+}
+
+.moonlit .button.disabled,
+.moonlit .button.disabled:hover,
+.moonlit .button.disabled:active,
+.moonlit .switchmenu button.disabled,
+.moonlit .switchmenu button:disabled,
+.moonlit .movemenu button:disabled {
+    background: #c4aaff !important;
+    border-color: #9177f1 !important;
+    color: #524b7c !important;
+    font-weight: 600;
+}
+
+.moonlit small.type,
+.moonlit small.pp {
+    text-shadow: 0 0 20px rgb(0, 0, 0), 0 0 20px rgba(0, 0, 0, 0.4);
+    font-weight: 600;
+}
+
+.moonlit #tooltipwrapper {
+    color: #f7f7f7;
+}
+
+.moonlit #tooltipwrapper .tooltip {
+    border: 1px solid #c4aaff;
+    background: rgba(27, 6, 78, 0.8);
+}
+
+.moonlit .weather {
+    box-shadow: inset 0 0 0 200px rgba(0, 0, 0, 0.35);
+}
+
+@media (max-height: 570px) and (min-width: 440px) { 
+    .moonlit .controls {
+        background: rgba(27, 6, 78, 0.8);
+    }
+}
+
+.moonlit *:focus {
+    border-color: #45386f;
+    box-shadow: 0 0 4px #c3a7ff, 0 0 4px #c3a7ff;
+}
+
+.moonlit hr {
+    border-top: 1px solid #987fdb;
+}
+
+/* Scrollbar */
+.moonlit .folderpane::-webkit-scrollbar {
+    width: 0px;
+}
+
+.moonlit ::-webkit-scrollbar {
+    width: 8px;
+}
+
+.moonlit ::-webkit-scrollbar-thumb {
+    border: 3px solid transparent;
+    background-color: rgba(27, 6, 78, 0.6);
+    border-radius: 5px;
+}
+
+.moonlit ::-webkit-scrollbar-track-piece {
+    background-color: transparent;
+    background-clip: padding-box;
+}
