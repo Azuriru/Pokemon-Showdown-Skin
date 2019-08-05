@@ -1,27 +1,27 @@
 /* Ladder */
-.dark .ladder.pad {
+.ladder.pad {
     padding-top: 15px;
 }
 
-.dark .ladder.pad p {
+.ladder.pad p {
     display: inline;
 }
 
-.dark .ladder.pad button[name="selectFormat"] {
+.ladder.pad button[name="selectFormat"] {
     padding: 4px 8px;
     margin-right: 10px;
 }
 
-.dark .ladder.pad form.search {
+.ladder.pad form.search {
     display: inline;
     margin-left: 10px;
 }
 
-.dark .ladder.pad form.search input {
+.ladder.pad form.search input {
     padding: 3px 8px;
 }
 
-.dark .ladder.pad form.search button {
+.ladder.pad form.search button {
     padding: 3px 8px;
     margin-left: 5px;
 }
@@ -35,6 +35,10 @@
 
 .roomlist form.search {
     margin-left: 10px;
+}
+
+.roomlist form.search input {
+    margin-right: 5px;
 }
 
 /* Teambuilder */
