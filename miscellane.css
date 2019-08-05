@@ -1,3 +1,43 @@
+/* Ladder */
+.dark .ladder.pad {
+    padding-top: 15px;
+}
+
+.dark .ladder.pad p {
+    display: inline;
+}
+
+.dark .ladder.pad button[name="selectFormat"] {
+    padding: 4px 8px;
+    margin-right: 10px;
+}
+
+.dark .ladder.pad form.search {
+    display: inline;
+    margin-left: 10px;
+}
+
+.dark .ladder.pad form.search input {
+    padding: 3px 8px;
+}
+
+.dark .ladder.pad form.search button {
+    padding: 3px 8px;
+    margin-left: 5px;
+}
+
+/* Ongoing Battles */
+.roomlist p:nth-of-type(3),
+.roomlist > label,
+.roomlist form.search {
+    display: inline;
+}
+
+.roomlist form.search {
+    margin-left: 10px;
+}
+
+/* Teambuilder */
 #teamSearchBar {
     font-size: 12pt;
     padding: 5px 10px;
