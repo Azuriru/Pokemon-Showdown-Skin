@@ -1,0 +1,805 @@
+.dark body {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(https://cdn.discordapp.com/attachments/505815497598828570/571515379399000074/unknown.png) top center / cover no-repeat fixed !important;
+}
+
+.dark body::before {
+    content: '';
+    background-image: url(https://cdn.discordapp.com/attachments/505815497598828570/571515379399000074/unknown.png);
+    background-color: #4d0009;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+    filter: brightness(.7) contrast(1.1) blur(0); /* Blur up to the user */
+}
+
+/* Header */
+.dark .header {
+    background: transparent;
+}
+
+.dark .userbar .username {
+    filter: brightness(120%);
+    text-shadow: 1px 1px 0 #48031b, 1px -1px 0 #48031b, -1px 1px 0 #48031b, -1px -1px 0 #48031b;
+}
+
+.dark .select:after {
+    color: #d86d5c;
+}
+
+.dark .menugroup {
+    background: rgba(58, 35, 109, 0.1);
+}
+
+.dark .ps-room.ps-room-light,
+.dark .tournament-box,
+.dark .tournament-status,
+.dark .tournament-toggle,
+.dark .pm-log-add {
+    background: rgba(62, 8, 0, 0.1);
+    color: #f3f3f3;
+}
+
+.dark .ps-room {
+    border-left: 1px solid #6f1001;
+    background: transparent;
+}
+
+.dark .userlist {
+    border-right: 1px solid #d86d5c
+}
+
+.dark .userlist strong,
+.dark .userlist span {
+    text-shadow: 0 0 20px #630f06, 0 0 20px #35000a;
+    filter: brightness(135%);
+}
+
+.dark .chat .username {
+    text-shadow:  0 0 20px #35000a;
+    filter: brightness(130%);
+}
+.dark .userlist li button {
+    transition: .5s;
+}
+
+.dark .userlist li button:hover {
+    background: rgba(36, 0, 123, 0.2);
+}
+
+.dark .chat-log {
+    background: rgba(62, 8, 0, 0.2);
+    color: #ddd;
+}
+
+.dark .chatbox label {
+    text-shadow: 1px 1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, -1px -1px 0 #000;
+}
+
+.dark .chat small {
+    color: #ff8977;
+}
+
+.dark .message small {
+    color: #ffbba2 !important;
+}
+
+.dark .message-pm {
+    color: #fcbb81;
+}
+
+.dark .infobox {
+    border: 1px solid #6f1001;
+}
+
+.dark .notice span,
+.dark .notice font {
+    color: #ffbba2 !important;
+}
+
+.dark .tournament-wrapper,
+.dark .tournament-box,
+.dark .tournament-toggle {
+    border-color: #6f1001;
+}
+
+.dark .tournament-box,
+.dark .tournament-toggle {
+    border-right: none;
+}
+
+.dark .tournament-title {
+    background: rgba(62, 8, 0, 0.2);
+}
+
+.dark .tournament-bracket-tree-link {
+    stroke: #6f1001;
+}
+
+.dark .tournament-bracket-tree-node > rect {
+    fill: #ef8e7e;
+    stroke: #6f1001;
+    color: black;
+}
+
+.dark .tournament-bracket-tree-node-win > rect,
+.dark .tournament-bracket-tree-node-match-result-win > rect {
+    fill: rgba(168, 255, 168, 0.8);
+    stroke: rgba(0, 128, 0, 0.7);
+    color: black;
+}
+
+.dark .tournament-bracket-tree-node-loss > rect,
+.dark .tournament-bracket-tree-node-match-result-loss > rect  {
+    fill: rgba(253, 164, 164, 0.8);
+    stroke: rgba(255, 40, 40, 0.7);
+    color: black;
+}
+
+.dark .textbox,
+.dark .textbox:hover {
+    border-color: #841d0d;
+    box-shadow: none;
+    background: rgba(62, 8, 0, 0.2);
+    color: #ddd;
+}
+
+.dark .textbox:focus {
+    background: rgba(62, 8, 0, 0.2);
+}
+
+.dark .textbox:focus {
+    border-color: #841d0d;
+    box-shadow: 0 0 4px #d86d5c, 0 0 4px #d86d5c;
+}
+
+.dark ::-webkit-input-placeholder {
+    color: #d86d5c;
+}
+
+.dark a,
+.dark a.ilink,
+.dark .message-announce a,
+.dark .broadcast-green a,
+.dark .broadcast-blue a,
+.dark .broadcast-red a {
+    color: #ff917f;
+    text-shadow: 0 -15px 2.5px transparent, 0 15px 2.5px transparent;
+    text-decoration: none;
+}
+
+.dark a:visited {
+    color: #f57762;
+    text-shadow: 0 -15px 2.5px transparent, 0 15px 2.5px transparent;
+    text-decoration: none;
+}
+
+.dark a:hover,
+.dark a.ilink:hover,
+.dark .message-announce a:hover,
+.dark .broadcast-green a:hover,
+.dark .broadcast-blue a:hover,
+.dark .broadcast-red a:hover  {
+    text-shadow: 0 0 2.5px #ff5d43, 0 0 2.5px #ff5d43;
+    color: #ff8571 !important;
+    text-decoration: none;
+    -webkit-transition: all .4s linear 0s;
+    -moz-transition: all .4s linear 0s;
+    -ms-transition: all .4s linear 0s;
+    -o-transition: all .4s linear 0s;
+    transition: all .4s linear 0s;
+}
+
+/* Chat */
+.dark .pm-window h3 {
+    border: 1px solid  #6f1101;
+    background: rgba(72, 10, 0, .5);
+    color: #ddd;
+}
+
+.dark .pm-window h3.pm-notifying,
+.dark .pm-window.focused h3 {
+    background: #fcbb7d;
+    border-color: #ff942d;
+    color: #560915;
+}
+
+.dark .pm-window.focused .pm-log,
+.dark .pm-window.focused .pm-log-add {
+    border-color: #6f1101;
+}
+
+.dark .pm-window.focused h3:hover,
+.dark .pm-window h3.pm-notifying:hover {
+    background: #ffcb99;
+    border-color: #ffa752;
+    color: #820e20;
+}
+
+.dark .pm-log,
+.dark .pm-log-add {
+    border-color: #6f1101;
+}
+
+.dark .pm-log {
+    background: rgba(62, 8, 0, .2);
+    color: #ddd;
+}
+
+.dark .chat.mine {
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.dark .challenge {
+    background: rgb(251, 144, 128, 0.5);
+    border: 1px solid #d86d5c;
+    color: #440900;
+}
+
+.dark .newsentry.unread {
+    background: rgba(234, 123, 103, 0.5);
+}
+
+.dark .newsentry {
+    border-bottom-color: #6f1001;
+}
+
+.dark .minimizebutton:hover, 
+.dark .pm-window h3:hover .minimizebutton,
+.dark .closebutton:hover,
+.dark .pm-window h3 .closebutton:hover + .minimizebutton {
+    color: #d86d5c !important;
+}
+
+/* Buttons */
+.dark .roomlist a.ilink {
+    border-color: #901503;
+    background: rgba(85, 6, 24, 0.2);
+    color: #ffa192;
+    transition: .5s;
+}
+
+.dark .roomlist a.ilink:hover {
+    border-color: #6f1101;
+    background: rgba(85, 6, 24, 0.3);
+    color: #ff8977;
+}
+
+.dark .userlist li {
+    border-bottom-color: #6f1101;
+}
+
+.dark .tabbar a.button.notifying {
+    background: rgba(245, 124, 105, .8) !important; 
+    border-color: #8c1c0a !important; 
+    color: #2f0210;
+}
+
+.dark .tabbar a.button.notifying:hover {
+    background: rgba(255, 154, 138, 0.8) !important;
+    color: #670725 !important;
+}
+
+.dark .message-announce {
+    background: rgba(72, 10, 0, .7);
+    color: #f99f92;
+    padding: 1px 4px 2px;
+}
+
+.dark a.button:visited {
+    color: #d86d5c;
+}
+
+.dark .tabbar .button,
+.dark .tabbar a.button,
+.dark .battleform .buttonbar button,
+.dark .roomlist .button,
+.dark .popupmenu button.button,
+.dark .userbar button,
+.dark .pad button,
+.dark .ps-popup button:not([name=setAvatar]),
+.dark .ps-room .button,
+.dark .teampane button:not([name=edit]):not([name=newTop]):not([name=delete]),
+.dark .teampane p button,
+.dark .teamchart button,
+.dark .pokemonedit-buttons button,
+.dark .format-select button,
+.dark .pm-log button,
+.dark .chat-log button,
+.dark .chat-log-add button,
+.dark .challenge .buttonbar button,
+.dark .suggested button,
+.dark .statform select,
+.dark .ps-popup select,
+.dark .ps-popup input,
+.dark .ps-popup .button,
+.dark .battle-log button,
+.dark .battle-log-add button,
+.dark .battle-controls button,
+.dark .battle-chat-toggle,
+.dark .switchmenu button,
+.dark .switchselect button,
+.dark .whatdo button,
+.dark .controls .button,
+.dark .movemenu label,
+.dark select {
+    background: rgba(85, 6, 24, .2);
+    border-color: #6f1101;
+    transition: .5s;
+    color: #ff8b78;
+    box-shadow: none;
+}
+
+.dark .tabbar .button:hover,
+.dark .tabbar a.button:hover,
+.dark .battleform .buttonbar button:hover,
+.dark .roomlist .button:hover,
+.dark .popupmenu button:hover,
+.dark .userbar button:hover,
+.dark .pad button:hover,
+.dark .ps-popup button:not([name=setAvatar]):hover,
+.dark .ps-room .button:hover,
+.dark .teampane button:not([name=edit]):not([name=newTop]):not([name=delete]):hover,
+.dark .teampane p button:hover,
+.dark .teamchart button:hover,
+.dark .pokemonedit-buttons button:hover,
+.dark .format-select button:hover,
+.dark .pm-log button:hover,
+.dark .chat-log button:hover,
+.dark .chat-log-add button:hover,
+.dark .challenge .buttonbar button:hover,
+.dark .setmenu button:hover,
+.dark .suggested button:hover,
+.dark .statform select:hover,
+.dark .ps-popup select:hover,
+.dark .ps-popup .button:hover,
+.dark .battle-log button:hover,
+.dark .battle-log-add button:hover,
+.dark .battle-controls button:hover,
+.dark .battle-chat-toggle:hover,
+.dark .switchmenu button:hover,
+.dark .switchselect button:hover,
+.dark .whatdo button:hover,
+.dark .controls .button:hover,
+.dark .movemenu label:hover,
+.dark select {
+    background: rgba(85, 6, 24, 0.35);
+    border-color: #a71700;
+}
+
+.dark .avatarlist button:hover {
+    border-color: #a71700;
+    background-color: rgba(85, 6, 24, 0.9);
+}
+
+.dark .bglist button:hover {
+    color: #ff8977;
+}
+
+.dark .button:focus {
+    border-color: #841d0d;
+    box-shadow: 0 0 4px #d86d5c, 0 0 4px #d86d5c;
+}
+
+.dark button:not(.userbutton) {
+    border-radius: 5px;
+}
+
+/* For Team Select */
+.dark .ps-popup button.sel {
+    border-color: #6f1101 !important;
+    background: rgba(85, 6, 24, 0.3);
+    color: #ff8977 !important;
+}
+
+.dark .ps-popup button[name="selectTeam"],
+.dark .ps-popup button[name="selectFormat"] {
+    border-color: transparent;
+    background: transparent;
+}
+
+.dark .ps-popup button[name="selectTeam"]:hover,
+.dark .ps-popup button[name="selectFormat"]:hover,
+.dark .teamlist button:hover {
+    border-color: #6f1101;
+    background: rgba(85, 6, 24, 0.3);
+    color: #ff8977;
+}
+
+.dark .tabbar a.button.subtle-notifying {
+    color: #ffb3a6;
+}
+
+.dark button {
+    color: #6f1101;
+}
+
+.dark .maintabbarbottom {
+    background: rgba(85, 6, 24, 0.2);
+    border-color: #6f1101;
+}
+
+.dark .button.cur,
+.dark .button.cur:hover,
+.dark .tabbar a.button.cur,
+.dark .tabbar a.button.cur:hover {
+    background: rgba(85, 6, 24, 0.4);
+    border-color: #6f1101;
+    border-bottom: none !important;
+}
+
+.dark .select:hover,
+.dark .team.team-hover {
+    border-color: #6f1101;
+    background: rgba(85, 6, 24, 0.2);
+    color: #ff8977;
+}
+
+.dark .select:disabled {
+    border-color: #6f1001;
+    background: rgba(85, 6, 24, 0.5);
+    color: #f47b6a;
+}
+
+.dark .teamselect:disabled strong {
+    color: #f47b6a;
+}
+
+.dark .select,
+.dark .team {
+    border-color: #6f1101;
+    background: rgba(85, 6, 24, 0.1);
+    color: #fff;
+}
+
+.dark .ps-popup {
+    background: rgba(62, 8, 0, 0.75);
+    color: #ddd;
+    border-color: #901503;
+    box-shadow: 2px 2px 3px rgba(62, 8, 0, 0.2);
+}
+
+.dark .popupmenu h3 {
+    color: #f99c8d;
+}
+
+/* Teambuilder */
+.dark .folderpane {
+    border-left-color: rgba(62, 8, 0, 0.3);
+}
+
+.dark .folderpane i,
+.dark .setmenu button, .dark .teamlist button,
+.dark .folder.cur .selectFolder,
+.dark .utilichart .namecol,
+.dark .utilichart .pokemonnamecol,
+.dark .utilichart .movenamecol {
+    color: #ffbeb3;
+}
+
+.dark .folderlist .foldersep:before,
+.dark .folderlistafter:before,
+.dark .folderlistbefore:before,
+.dark .folderpane h3,
+.dark .folder .selectFolder,
+.dark .folderhack1,
+.dark .folderhack2 {
+    background: rgba(62, 8, 0, 0.3);
+    color: #ffbeb3;
+}
+
+.dark .folder .selectFolder,
+.dark .folderlist .foldersep:before,
+.dark .folderlistafter:before, 
+.dark .folderlistbefore:before,
+.dark .folderpane h3 {
+    border-right: 1px solid #d86d5c;
+}
+
+.dark .folder .selectFolder:hover {
+    background: rgba(85, 6, 24, 0.2);
+}
+
+.dark .folder.cur .selectFolder:hover {
+    background: transparent;
+}
+
+.dark .folder.cur .selectFolder,
+.dark .folder.cur .selectFolder:hover,
+.dark .folder.cur .selectFolder:active {
+    border-top: 1px solid #d86d5c;
+    border-bottom: 1px solid #d86d5c;
+    border-left: 1px solid #d86d5c;
+    border-right: 0;
+}
+
+.dark .folder .selectFolder.active, .dark .folder .selectFolder:active {
+    background: rgba(85, 6, 24, 0.6);
+    color: #fff;
+}
+
+.dark .plusonefolder {
+    background: #d86d5c !important;
+}
+
+.dark #teamSearchBar {
+    border-color: #6f1101;
+    color: #6f1101;
+}
+
+/* In the actual team */
+.dark .setchart, 
+.dark .setchart-nickname {
+    background-color: rgba(85, 6, 24, 0.2);
+    box-shadow: none;
+    border: 1px solid #b7010d;
+}
+
+.dark .setchart label,
+.dark .setchart-nickname label,
+.dark .setchart .statrow-head em {
+    color: #fb8b78;
+}
+
+.dark .teamchartbox {
+    border-top: 1px solid #6f1001;
+}
+
+.dark .utilichart .sortrow {
+    background: rgba(111, 9, 29, 0.8);
+    color: #f1f1f1;
+    border: 1px solid #6f1001;
+}
+
+.dark .utilichart .sortcol {
+    color: #f1f1f1;
+}
+
+.dark .utilichart .sortcol.numsortcol.cur,
+.dark .utilichart .sortcol.numsortcol.cur:hover {
+    background: rgba(210, 129, 129, 0.3);
+    cursor: default;
+    color: #f1f1f1;
+}
+
+.dark .utilichart .sortcol:hover {
+    background: rgba(210, 129, 129, 0.3);
+}
+
+.dark .utilichart .sortcol.cur {
+    background: rgb(251, 144, 128, 0.3);
+}
+
+.dark .setcol-icon label {
+    text-shadow: #6f1001 1px 1px 0, #6f1001 1px -1px 0, #6f1001 -1px 1px 0, #6f1001 -1px -1px 0;
+}
+
+.dark .setdetails .detailcell {
+    border-left: 1px solid #b7090c;
+}
+
+.dark .teambar button {
+    background: rgba(85, 6, 24, 0.5);
+    color: #f1f1f1;
+    border: 1px solid #b7090c;
+}
+
+.dark .teambar button:disabled,
+.dark .teambar button:disabled:hover,
+.dark .teambar button:disabled:active {
+    color: #fff;
+    background: rgba(85, 6, 24, 0.7);
+    border-color: #f53437;
+}
+
+.dark .teambar button:hover {
+    background: rgba(210, 129, 129, 0.3);
+    color: #f1f1f1;
+    border: 1px solid #d86d5c;
+}
+
+.dark .utilichart h3,
+.dark .dexentry h3,
+.dark .resultheader h3 {
+    background: rgba(111, 9, 29, 0.8);
+    color: #f1f1f1;
+    border: 1px solid #6f1001;
+}
+
+.dark .teambuilder-clipboard-container {
+    border-color: #6f1101;
+}
+
+.dark .teambuilder-clipboard-data {
+    border-color: #6f1101;
+    background: rgba(85, 6, 24, 0.6);
+    color: #fff;
+}
+
+.dark .teambuilder-clipboard-data:hover {
+    border-color: #6f1101;
+    background: rgba(85, 6, 24, 0.3);
+    color: #ff8977;
+}
+
+.dark .teambuilder-results .result a.cur {
+    border-color: #b7090c;
+    background: rgba(85, 6, 24, 0.3);
+}
+
+.dark .teambuilder-results .result a.hover,
+.dark .teambuilder-results .result a:hover,
+.dark .teambuilder-results .result a.cur:hover,
+.dark .setmenu button:hover,
+.dark .teamlist button:hover {
+    border-color: #d86d5c;
+    background: rgba(210, 129, 129, 0.2);
+    color: #fff;
+}
+
+/* Ladder */
+.dark .ladder table,
+.dark .ladder td,
+.dark .ladder th {
+    border: 1px solid #6f1001;
+}
+
+.dark .ladder th {
+    background: #fb9988;
+    color: #000;
+}
+
+/* Battle */
+.dark .whatdo {
+    color: #f0e9ff;
+}
+
+.dark .battle-controls {
+    background: transparent;
+}
+
+.dark .ps-room.ps-room-opaque,
+.dark .battle-log-add {
+    background: rgba(85, 6, 24, 0.2);
+}
+
+.dark .battle-log h2 {
+    background: rgba(85, 6, 24, 0.2);
+    border: 1px solid #6f1001;
+    border-left: none;
+}
+
+.dark .battle-log,
+.dark .battle-log-add {
+    border: 1px solid #6f1001;
+}
+
+.dark .battle-log {
+    background: rgba(85, 6, 24, 0.2);
+    color: #ffdad6;
+}
+
+.dark .userlist-maximized {
+    background: rgba(85, 6, 24, 0.8);
+    color: #f0e9ff;
+}
+
+.dark .userlist-minimized {
+    border-bottom: 1px solid #6f1001;
+    background: rgba(85, 6, 24, 0.5);
+    color: #f0e9ff;
+}
+
+.dark .userlist-minimized .userlist-count:hover,
+.dark .userlist-maximized .userlist-count:hover {
+    background: rgba(85, 6, 24, 0.5);
+}
+
+.dark .battle-log .chat > strong,
+.dark .battle-log .chat > em,
+.dark .battle-log .chat > q {
+    color: #ffa192 !important;
+}
+
+.dark .battle-log .rated strong {
+    color: #e97a69;
+    background: #6f1101;
+}
+
+.dark .broadcast-red,
+.dark .broadcast-blue {
+    background-color: #6f1101;
+    color: #fb8977;
+}
+
+.dark .highlighted {
+    background: rgba(198, 174, 255, 0.3);
+}
+
+.dark .chat code,
+.dark .ps-popup code,
+.dark .chat .spoiler:hover code,
+.dark .chat .spoiler:active code,
+.dark .chat .spoiler-shown code {
+    border-color: #6f0f01;
+    background: #4c0a00;
+}
+
+.dark .rightbar,
+.dark .leftbar {
+    background-color: rgba(85, 6, 24, 0.2);
+    border-left: 1px solid #fb8b78;
+    color: #d86d5c;
+}
+
+.dark .button.disabled,
+.dark .button.disabled:hover,
+.dark .button.disabled:active,
+.dark .switchmenu button.disabled,
+.dark .switchmenu button:disabled,
+.dark .movemenu button:disabled {
+    background: #d86d5c !important;
+    border-color: #6f0f01 !important;
+    color: #6f0f01 !important;
+    font-weight: 600;
+}
+
+.dark small.type,
+.dark small.pp {
+    text-shadow: 0 0 20px rgb(0, 0, 0), 0 0 20px rgba(0, 0, 0, 0.4);
+    font-weight: 600;
+    filter: brightness(1.5);
+}
+
+.dark #tooltipwrapper {
+    color: #f7f7f7;
+}
+
+.dark #tooltipwrapper .tooltip {
+    border: 1px solid #d86d5c;
+    background: rgba(85, 6, 24, 0.8);
+}
+
+.dark .weather {
+    box-shadow: inset 0 0 0 200px rgba(0, 0, 0, 0.35);
+}
+
+@media (max-height: 570px) and (min-width: 440px) { 
+    .dark .controls {
+        background: rgba(85, 6, 24, 0.8);
+    }
+}
+
+.dark *:focus {
+    border-color: #841d0d;
+    box-shadow: 0 0 4px #d86d5c, 0 0 4px #d86d5c;
+}
+
+.dark hr {
+    border-top: 1px solid #6f1101;
+}
+
+/* Scrollbar */
+.dark .folderpane::-webkit-scrollbar {
+    width: 0px;
+}
+
+.dark ::-webkit-scrollbar {
+    width: 14px;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+    border: 3px solid transparent;
+    background-color: rgba(85, 6, 24, 0.5);
+    border-radius: 15px;
+    background-clip: padding-box;
+}
+
+.dark ::-webkit-scrollbar-track-piece {
+    background-color: transparent;
+    background-clip: padding-box;
+}
