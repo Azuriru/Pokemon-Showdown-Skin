@@ -1,24 +1,14 @@
 .dark body {
-    background: url(https://raw.githubusercontent.com/GameModerator/Pokemon-Showdown-Skin/master/Reshiram.jpg) center / cover no-repeat fixed rgb(154, 129, 213)!important;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://raw.githubusercontent.com/GameModerator/Pokemon-Showdown-Skin/master/Reshiram.jpg) center / cover no-repeat fixed #7d56ff !important;
 }
 
-.dark body::before {
-    content: '';
-    background: url(https://raw.githubusercontent.com/GameModerator/Pokemon-Showdown-Skin/master/Reshiram.jpg) bottom / cover no-repeat fixed;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    top: 0;
-    filter: brightness(.45) contrast(1.1) blur(0);
-}
 /* Header */
 .dark .header {
-    background: transparent;
+    background: rgba(15, 27, 48, 0.3);
 }
 
 .dark .menugroup {
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(58, 35, 109, 0.2);
 }
 
 .dark .ps-room.ps-room-light,
@@ -31,22 +21,22 @@
 }
 
 .dark .ps-room {
-    border-left: 1px solid rgba(255, 255, 255, .2);
-    /* background: rgba(12, 0, 41, 0.4); */
+    border-left: 1px solid #c5acff;
+    background: transparent;
 }
 
 .dark .userlist {
-    border-right: 1px solid rgba(255, 255, 255, .2);
+    border-right: 1px solid #c4aaff
 }
 
 .dark .userlist strong,
 .dark .userlist span {
     text-shadow: 0 0 20px #4b00ff, 0 0 20px #0c0029;
-    filter: brightness(1.2);
 }
 
 .dark .chat .username {
     text-shadow:  0 0 20px #0c0029;
+    filter: brightness(1.2);
 }
 .dark .userlist li button {
     transition: .5s;
@@ -57,7 +47,7 @@
 }
 
 .dark .chat-log {
-    background: transparent;
+    background: rgba(12, 0, 41, 0.2);
     color: #ddd;
 }
 
@@ -175,8 +165,8 @@
 
 /* Chat */
 .dark .pm-window h3 {
-    border: 1px solid rgba(27, 6, 78, 0.8);
-    background: rgba(42, 29, 85, .3);
+    border: 1px solid  #c6aeff;
+    background: rgb(27, 6, 78);
     color: #ddd;
 }
 
@@ -201,16 +191,12 @@
 
 .dark .pm-log,
 .dark .pm-log-add {
-    border-color: rgba(27, 6, 78, 0.8);
+    border-color: #c6aeff;
 }
 
 .dark .pm-log {
-    background: rgba(42, 29, 85, .3);
+    background: rgba(12, 0, 41, 0.7);
     color: #ddd;
-}
-
-.dark .pm-log .newsentry {
-    border-bottom-color: rgba(27, 6, 78, 0.8);
 }
 
 .dark .chat.mine {
@@ -249,7 +235,7 @@
 }
 
 .dark .userlist li {
-    border-bottom-color: rgba(255, 255, 255, .2);
+    border-bottom-color: #987fdb;
 }
 
 .dark .tabbar a.button.notifying {
@@ -274,12 +260,7 @@
 }
 
 .dark .tabbar .button,
-.dark .tabbar a.button {
-    background: rgba(42, 29, 85, .3);
-    border-color: rgba(255, 255, 255, .2);
-    box-shadow: none;
-}
-
+.dark .tabbar a.button,
 .dark .battleform .buttonbar button,
 .dark .roomlist .button,
 .dark .popupmenu button.button,
@@ -310,19 +291,15 @@
 .dark .whatdo button,
 .dark .controls .button,
 .dark .movemenu label {
-    background: rgba(42, 29, 85, .3);
-    border-color: rgba(27, 6, 78, 0.8);
+    background: rgba(27, 6, 78, 0.5);
+    border-color: #987fdb;
     transition: .5s;
-    color: #f2ecff;
+    color: #c4aaff;
     box-shadow: none;
 }
 
 .dark .tabbar .button:hover,
-.dark .tabbar a.button:hover {
-    background: rgba(42, 29, 85, .5);
-    border-color: rgba(255, 255, 255, .2);
-}
-
+.dark .tabbar a.button:hover,
 .dark .battleform .buttonbar button:hover,
 .dark .roomlist .button:hover,
 .dark .popupmenu button:hover,
@@ -353,8 +330,8 @@
 .dark .whatdo button:hover,
 .dark .controls .button:hover,
 .dark .movemenu label:hover {
-    background: rgba(42, 29, 85, .5);
-    border-color: rgba(27, 6, 78, 0.9);
+    background: rgba(27, 6, 78, 0.9);
+    border-color: #b698fb;
 }
 
 .dark .avatarlist button:hover {
@@ -405,23 +382,23 @@
 }
 
 .dark .maintabbarbottom {
-    background: rgba(27, 6, 78, 0.3);
-    border-color: rgba(255, 255, 255, .2);
+    background: rgba(27, 6, 78, 0.6);
+    border-color: #c6aeff;
 }
 
 .dark .button.cur,
 .dark .button.cur:hover,
 .dark .tabbar a.button.cur,
 .dark .tabbar a.button.cur:hover {
-    background: rgba(27, 6, 78, 0.3);
-    border-color: rgba(255, 255, 255, .2);
+    background: rgba(27, 6, 78, 0.6);
+    border-color: #c6aeff;
 }
 
 .dark .select:hover,
 .dark .team.team-hover {
-    border-color: rgba(27, 6, 78, 0.9);
-    background: rgba(42, 29, 85, .5);
-    color: #fff;
+    border-color: #c6aeff;
+    background: rgba(27, 6, 78, 0.3);
+    color: #dbcbff;
 }
 
 .dark .select:disabled {
@@ -435,9 +412,9 @@
 }
 
 .dark .select, .dark .team {
-    border-color: rgba(27, 6, 78, 0.8);
-    background: rgba(42, 29, 85, .3);
-    color: #f2ecff;
+    border-color: #c6aeff;
+    background: rgba(27, 6, 78, 0.6);
+    color: #fff;
 }
 
 .dark .ps-popup {
@@ -660,7 +637,7 @@
 }
 
 .dark .userlist-minimized {
-    border-bottom: 1px solid rgba(255, 255, 255, .2);
+    border-bottom: 1px solid #c5acff;
 }
 
 .dark .userlist-minimized .userlist-count:hover,
@@ -757,18 +734,16 @@
 }
 
 .dark ::-webkit-scrollbar {
-	width: 14px;
+    width: 8px;
 }
 
 .dark ::-webkit-scrollbar-thumb {
-	background-color: rgba(42, 29, 85, .5);
-	border-radius: 10px;
-	border: 3px solid transparent;
-	background-clip: padding-box;
+    border: 3px solid transparent;
+    background-color: rgba(27, 6, 78, 0.6);
+    border-radius: 5px;
 }
 
-.dark ::-webkit-scrollbar-track {
-	background: transparent;
+.dark ::-webkit-scrollbar-track-piece {
+    background-color: rgba(27, 6, 78, 0.4);
+    background-clip: padding-box;
 }
-
-
